@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-skin-dark theme-color-56c8d2">
+<head>
+<title>Aione Framework</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
+<style>
+	#p div {
+		    height: 275px;
+	}
+	#p div img{
+width: 215px;
+	}
+	h2{
+		margin:0;
+		padding: 25px;
+	}
+	.bar{
+		    background-image: linear-gradient(transparent, #bfbea9);
+    padding-left: 80px;
+    padding-bottom: 25px;
+	}
+	.section2{
+		    background-image: linear-gradient(#c3c2af, white);
+	}
+
+.artical{
+	
+	    border: 2px solid;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: inset 0 0 9px #98a32a;
+}
+#btn1,#btn2,#btn3,#btn4{
+	display: none;
+}
+#shoe1:hover,#shoe2:hover,#shoe3:hover,#shoe4:hover{
+	border: 1px solid;
+    border-top: none;
+    border-radius: 8px;
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+		$("#h1").click(function(){
+			$("#h1").html("Lorial ipsum det amit set wdon");
+		}),
+		$("#h2").click(function(){
+			$("#h2").html("Lorial ipsum det amit set wdon");
+		}),
+		$("#h3").click(function(){
+			$("#h3").html("Lorial ipsum det amit set wdon");
+		}),
+		$("#shoe1").hover(function(){
+			$("#btn1").toggle(180);
+		}),
+		$("#shoe2").hover(function(){
+			$("#btn2").toggle(180);
+		}),
+		$("#shoe3").hover(function(){
+			$("#btn3").toggle(180);
+		}),
+		$("#shoe4").hover(function(){
+			$("#btn4").toggle(180);
+		}),
+		$("button").click(function(){
+			$(".aione-section4").hide();
+		}),
+		
+
+$(document).ready(function(){
+  $("input").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("button").click(function(){
+    $("#p div").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+});
+	});
+</script>
+</head>
+<body>     	
+	<div class="section1 bar">
+		<div class="row">
+			<div class="column">
+				<img src="http://sandbox-halothemes1-com.3dcartstores.com/assets/images/banners/home-bottom-banner-3.jpg">
+				<img class="ph-25" src="http://sandbox-halothemes1-com.3dcartstores.com/assets/images/banners/home-bottom-banner-2.jpg">
+				<img src="http://sandbox-halothemes1-com.3dcartstores.com/assets/images/banners/home-bottom-banner-1.jpg">
+			</div>
+		</div>
+	</div>
+		<div class="section2 pv-2p" align="center">
+   		<div class="row">
+     		<div class="column">
+				<input id="select" type="text" style="width: 45%">
+  				<button id="search" value="search"><i class="fa fa-search" style="font-size:17px; padding:1.3px"></i></button>
+     		</div>
+     	</div>
+     </div>
+
+	<div class="section3" >
+		<div class="ar aione-align-center" style="width:80%; margin:0 auto">
+			<h2 class="aione-align-center">Articles</h2>
+			<div class="ac l33 m33 s100 ">
+				<div class="wrapper artical">
+					<div class="ar">
+						<div class="ac l30 m30">
+							<img src="http://sandbox-halothemes1-com.3dcartstores.com/assets/images/thumbnails/sample-pro(3)_thumbnail.jpg">
+						</div>
+						<div class="ac l70 m70">
+							<h4 id="h1">60% off <br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ac l33 m33 s100 ">
+				<div class="wrapper artical">
+					<div class="ar">
+						<div class="ac l30 m30">
+							<img  src="http://sandbox-halothemes1-com.3dcartstores.com/assets/images/thumbnails/sample-pro(16)_thumbnail.jpg">
+						</div>
+						<div class="ac l70 m70">
+							<h4  id="h2">30% off<br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ac l33 m33 s100 ">
+				<div class="wrapper artical">
+					<div class="ar">
+						<div class="ac l30 m30">
+							<img  src="http://sandbox-halothemes1-com.3dcartstores.com/assets/images/thumbnails/sample-pro(9)_thumbnail.jpg">
+						</div>
+						<div class="ac l70 m70">
+							<h4 id="h3">50% off <br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></span></h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="aione-section4 mv-5p" style="height: 225px;">
+		<div class="ar aione-align-center">
+			<div class="ac l25 m25 ph-3p" >
+				<div class="wrapper ph-8p" id="shoe1" >
+				<img src="https://cdn.mec.ca/medias/sys_master/high-res/high-res/9016690409502/5062212-GRY50.jpg" >
+				<p class="pt-23">Cras in nunc non ipsum duo cursus ultrices est</p>
+				<br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+				<h4 >$300.00</h4>
+				<a href="#" class="aione-button small rounded " id="btn1"> Add to cart</a>
+				</div>
+			</div>
+			<div class="ac l25 m25 ph-3p" >
+				<div class="wrapper ph-8p" id="shoe2" >
+				<img src="https://cdn.mec.ca/medias/sys_master/high-res/high-res/9016690409502/5062212-GRY50.jpg" >
+				<p class="pt-23">Cras in nunc non ipsum duo cursus ultrices est</p>
+				<br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+				<h4 ><s style="font-size: 15px">$300.00</s> $260.00</h4>
+				<a href="#" class="aione-button small rounded " id="btn2"> Add to cart</a>
+				</div>
+			</div>
+			<div class="ac l25 m25 ph-3p" >
+				<div class="wrapper ph-8p" id="shoe3" >
+				<img src="https://cdn.mec.ca/medias/sys_master/high-res/high-res/9016690409502/5062212-GRY50.jpg" >
+				<p class="pt-23">Cras in nunc non ipsum duo cursus ultrices est</p>
+				<br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+				<h4 >$300.00</h4>
+				<a href="#" class="aione-button small rounded " id="btn3"> Add to cart</a>
+				</div>
+			</div>
+			<div class="ac l25 m25 ph-3p" >
+				<div class="wrapper ph-8p" id="shoe4" >
+				<img src="https://cdn.mec.ca/medias/sys_master/high-res/high-res/9016690409502/5062212-GRY50.jpg" >
+				<p class="pt-23">Cras in nunc non ipsum duo cursus ultrices est</p>
+				<br><span style="color:orange; font-size:15px"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></span>
+				<h4 >$300.00</h4>
+				<a href="#" class="aione-button small rounded " id="btn4"> Add to cart</a>
+				</div>
+			</div>	
+		</div>
+	</div>
+
+	<div class="section5 ar pt-20" id="p">
+   		
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img src="https://m.media-amazon.com/images/I/715s7UqJPcL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center pt-20">Kraasa Men's Synthetic Leather Formal Shoes  <br><h4 class="aione-align-center">$335</h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img src="https://m.media-amazon.com/images/I/718J9aaVlHL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center pt-30">Metro Men's Leather Formal Shoes <br><h4 class="aione-align-center">$200 </h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="p-28" src="https://m.media-amazon.com/images/I/81Y7QHGmRZL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">Clarks Men's Gilman Lace Formal Shoes <br><h4 class="aione-align-center">$400 </h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="p-30" src="https://m.media-amazon.com/images/I/71QH6nkv3AL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">Emosis Mens Loafer Shoe <br><h4 class="aione-align-center">$340</h4></p>
+     			</div>
+     		</div>
+     	
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"><a href=""><img class="p-25" src="https://m.media-amazon.com/images/I/616b0zHlYvL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">Babes Women's Synthetic Bellies  <br><h4 class="aione-align-center">$320</h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"><a href=""><img class="p-38" src="https://m.media-amazon.com/images/I/61x5iq9Q71L._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">Footshez Suede Crossover Flat Bellie Sandals for Women & Girls<br><h4 class="aione-align-center">$399 </h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"><a href=""><img class="p-32" src="https://m.media-amazon.com/images/I/614Rd0gxD1L._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">FASHIMO Latest Attractive Look Women/Girls Casual Shoes <br><h4 class="aione-align-center">$400 </h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="pb-2" src="https://m.media-amazon.com/images/I/714w72fHX9L._AC_UL320_ML3_.jpg"> </a> <p class="aione-align-center">Footshez Women's Formal Shoes <br><h4 class="aione-align-center">$340</h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="pb-2" src="https://m.media-amazon.com/images/I/71BC8JQIdJL._AC_UL320_ML3_.jpg"></a><p class="aione-align-center">skoodo Kids Casual Sports Shoes <br><h4 class="aione-align-center">$140</h4></p>
+     			</div>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="p-20" src="https://m.media-amazon.com/images/I/51LerHlOOPL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">PARAGON Boy kid's Formal Shoes <br><h4 class="aione-align-center">$530</h4></p>
+     			</div></a>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="p-22" src="https://m.media-amazon.com/images/I/71r0wYVzKiL._AC_UL320_ML3_.jpg"></a> <p class="aione-align-center">TRASE SRV Parker Kids & Boys Sports Running Shoes<br><h4 class="aione-align-center">$240</h4></p>
+     			</div></a>
+     		</div>
+     		<div class="ac l25 m33">
+     			<div  class="ph-8p"> <a href=""><img class="p-12" src="https://m.media-amazon.com/images/I/71cSa-wuJxL._AC_UL320_ML3_.jpg"> </a><p class="aione-align-center">Essence kid's Vc 3101 High Top Synthetic Shoes - Black<br><h4 class="aione-align-center">$440</h4></p>
+     			</div> </a>
+     		</div>
+     	</div>
+    </div>
+</body>
+</html>
