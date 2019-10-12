@@ -1,0 +1,1048 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>overlay css </title>
+<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
+<style type="text/css">
+	body{
+		background-image: url(https://thumbs.gfycat.com/GrippingLittleBlueshark-size_restricted.gif);
+		background-position:cover;
+		color: white;
+	}
+
+	img{
+		width: px;
+	}
+	p{
+		font-size: 33px;
+    	padding: 6px;
+	}
+
+	h2{
+		position: relative;
+		background: #f0d3d333;
+    	width: 22%;
+    	padding: 6px;
+    	overflow: hidden;
+    	margin: 0 auto;
+    	color: #ffffffd1;
+    	
+	}
+	 h2:before{
+		    position: absolute;
+    content: "";
+    top: 0 ;
+    bottom:0;
+    left: -25%;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transform: skew(-64deg);
+    background: linear-gradient(120deg,transparent,rgba(146, 148, 248, 0.4),transparent);
+    transition-duration: 2s;
+	}
+	.div:hover h2:before {
+		left:100%;
+		opacity:1;
+		transition-duration: 2s;
+	}
+
+		.ac{
+		padding: 10px, 20px;
+	}
+
+
+.section-1 .aione-wrapper-1{
+		background-color: #85858573;
+    	transform: rotate(3.9deg);
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid; 
+	}
+.section-1 .aione-wrapper-1:before{
+		position: absolute;
+    	width: 17px;
+    	content: "";
+    	height: 17px;
+    	background: #E12200;
+    	top: 0px;
+    	left: 51%;
+    	border-radius: 50%;
+	}
+.section-1 .aione-wrapper-1:after{
+		position: absolute;
+    	width: 19px;
+    	content: "";
+    	height: 19px;
+    	background: #E12200;
+    	top: -20px;
+    	left: 48%;
+    	border: 3px solid #b56db2;
+    	border-radius: 50%;
+	}
+.section-1 .aione-wrapper-1:hover{
+	    transform: rotate(0deg);
+    	transition-duration: 1s;
+    	box-shadow: 0 0 12px -1px black;
+	}
+
+
+
+.section-1 .aione-wrapper-2{
+		background-color: #85858573;
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+	}
+.section-1 .aione-wrapper-2 .image{
+		overflow: hidden;
+	}
+.section-1 .aione-wrapper-2 img{
+		transform: scale(1.8);
+		transition-duration: 3s;
+		transition-delay: 2s: 
+	}
+.section-1 .aione-wrapper-2:hover img{
+		transform: scale(1);
+		transition-duration: 3s;
+		transition-delay: 2s: 
+		box-shadow: 0 0 12px -1px black;
+	}
+.section-1 .aione-wrapper-2:hover{
+		box-shadow: 0 0 12px -1px black;
+	}
+
+
+
+.section-1 .aione-wrapper-3{
+	    background-color: #85858573;    
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+	}
+.section-1 .aione-wrapper-3:hover img{
+		transform: scale(1.4);
+		box-shadow: 0 0 12px -1px black;
+		transition-duration: 3s;
+	}
+.section-1 .aione-wrapper-3 .image{
+		overflow: hidden;
+	}
+
+
+
+
+
+.section-2 .aione-row-1{
+		height:300px;
+	}
+
+.section-2 .aione-wrapper-1{
+		position: relative;
+		background-color: #85858573;
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+	}
+.section-2 .aione-wrapper-1 .image{
+		overflow: hidden;
+	}
+.section-2 .aione-wrapper-1 .title{
+		position: absolute;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 0.7;
+    	background:#5f6669c2;
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transform: scale(0);
+    	-ms-transform: scale(0);
+    	transform: scale(0);
+    	-webkit-transition: .3s ease;
+    	transition: .3s ease;
+	}
+.section-2 .aione-wrapper-1:hover .title{
+		position: absolute;
+		webkit-transform: scale(1);
+        transform: scale(1);
+	}
+.section-2 .aione-wrapper-1 .title p{
+        position: absolute;
+        color: white;
+        font-size:20px; 
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+        }
+
+
+
+
+
+.section-2 .aione-wrapper-2{
+		position: relative;
+		background-color: #85858573;
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+	}
+.section-2 .aione-wrapper-2 .title{
+		position: inherit;
+	    margin-top: -40px;
+		transition-duration: 1.7s; 
+		opacity: 0;
+	}
+.section-2 .aione-wrapper-2:hover .title{
+		margin-top: 0;
+		opacity: 1;
+	}
+
+
+
+
+
+.section-2 .aione-wrapper-3{
+		position: relative;
+		background-color: #85858573;
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+	}
+.section-2 .aione-wrapper-3 .title{
+		position: absolute;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1;
+    	background:#5f6669c2;
+    	overflow: hidden;
+    	width: 100%;
+    	height: 20%;
+    	-webkit-transition: .3s ease;
+    	transition: 3s ease;
+	}
+.section-2 .aione-wrapper-3:hover .title{
+		position: absolute;
+		height: 100%;
+	}
+
+
+
+
+
+.section-2 .aione-wrapper-4{
+		background-color: #85858573;
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+    	position: relative;
+    	overflow: hidden;
+	}
+.section-2 .aione-wrapper-4 .title{
+		position: absolute;
+    	left: 100%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 0;
+    	background:#5f6669c2;
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: 2s ease;
+	}
+.section-2 .aione-wrapper-4:hover .title{
+		position: absolute;
+		left: 0;
+		opacity: 1;
+	}
+
+
+
+
+
+
+.section-2 .aione-row-2 .aione-wrapper-1{
+		position: relative;
+		background-color: #85858573;
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+	}
+.section-2 .aione-row-2 .aione-wrapper-1 .image img{
+		overflow: hidden;
+	}
+.section-2 .aione-row-2 .aione-wrapper-1 .title{
+		position: absolute;
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 0;
+    	background:#5f6669c2;
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transform: scale(1.5);
+    	transform: scale(1.5);
+    	-webkit-transition: .3s ease;
+	    transition: .3s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-1:hover .title{
+		position: absolute;
+		opacity: .7;
+		webkit-transform: scale(1);
+        transform: scale(1);
+	}
+.section-2 .aione-row-2 .aione-wrapper-1 .title p{
+  		position: absolute;
+        color: white;
+        font-size:20px; 
+        top: 45%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+
+
+
+
+.section-2 .aione-row-2 .aione-wrapper-2{
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+    	position: relative;
+    	overflow: hidden;
+	}
+	.section-2 .aione-row-2 .aione-wrapper-2 .image{
+		transition: .9s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-2 .title{
+		position: absolute;
+    	left: -100%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1;
+    	background: transparent;
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .9s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-2:hover .title{
+		left:0;
+		transition: .9s ease;
+}
+.section-2 .aione-row-2 .aione-wrapper-2:hover .image{
+		margin-left: 250px;
+		transition: .9s ease;
+}
+
+
+
+
+
+
+
+
+
+    .section-2 .aione-row-2 .aione-wrapper-3{
+		
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+    	position: relative;
+    	overflow: hidden;
+	}
+.section-2 .aione-row-2 .aione-wrapper-3 .title{
+		position: absolute;
+    	left: 0;
+    	top:-20%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1;
+    	background: transparent;
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transition: .5s ease;
+    	transition: .5s ease;
+	}
+
+	
+.section-2 .aione-row-2 .aione-wrapper-3:hover .image:before{
+		position: absolute;
+		content: "";
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	transform: skewY(0);
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .7s ease;
+    	transition: .7s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-3:hover .image:after{
+		position: absolute;
+		content: "";
+    	left: 50%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	transform: skewY(0);
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .7s ease;
+    	transition: .7s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-3 .image:before{
+		position: absolute;
+		content: "";
+    	left: -51%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	transform: skewY(40deg);
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .5s ease;
+    	transition: .5s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-3 .image:after{
+		position: absolute;
+		content: "";
+    	left: 100%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	transform: skewY(-40deg);
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .5s ease;
+    	transition: .5s ease;
+	}
+
+.section-2 .aione-row-2 .aione-wrapper-3:hover .title{
+		position: absolute;
+		top: 2%;
+		transition-delay:.3s; 
+		opacity: 1;
+	}
+
+
+
+
+
+
+
+
+.section-2 .aione-row-2 .aione-wrapper-4{
+		
+    	padding: 5px 5px 2px 5px;
+    	border:2px solid;
+    	position: relative;
+    	overflow: hidden;
+	}
+
+.section-2 .aione-row-2 .aione-wrapper-4 .title{
+		position: absolute;
+    	left: 0;
+    	top:-20%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1;
+    	background: transparent;
+    	transform:scale(0); 
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .8s ease;
+	}
+
+	
+.section-2 .aione-row-2 .aione-wrapper-4:hover .image:before{
+		position: absolute;
+		content: "";
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-4:hover .image:after{
+		position: absolute;
+		content: "";
+    	left: 50%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-4 .image:before{
+		position: absolute;
+		content: "";
+    	left: -51%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+.section-2 .aione-row-2 .aione-wrapper-4 .image:after{
+		position: absolute;
+		content: "";
+    	left: 100%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+
+.section-2 .aione-row-2 .aione-wrapper-4:hover .title{
+		position: absolute;
+		transform: scale(1);
+		top: 2%;
+		transition-delay:.3s; 
+		opacity: 1;
+	}
+.section-2 .aione-row-2 .aione-wrapper-4:hover p{
+	    transform: rotate(360deg);
+	    transition-duration: .9s;
+	}
+.section-2 .aione-row-2 .aione-wrapper-4 .title p{
+		top: 38%;
+    	position: absolute;
+    	left: 20%;
+	}
+
+
+
+
+
+
+
+
+
+.section-3 p{
+	font-size:14px;
+	font-weight: 400px;
+	line-height: 1.5;
+	padding: 5px;
+}
+.section-3 img{
+	height: 231px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+.section-3 .aione-row-1 .aione-wrapper-1{
+	border:1px solid;
+	padding:5px;
+	overflow: hidden;
+	position: relative;
+}
+.section-3 .aione-row-1 .aione-wrapper-1 img{
+	overflow: hidden;
+}
+.section-3 .aione-row-1 .aione-wrapper-1 .title{
+	position: absolute;
+    top: 100%;
+    left: -200%;
+    right: 0;
+    bottom: 0;
+    height: 96%;
+    width: 97%;
+    margin: 0 auto;
+    background-color: #808080b5;
+    transition-duration: .3s;
+}
+.section-3 .aione-row-1 .aione-wrapper-1:hover .title{
+	position: absolute;
+	top: 2%;
+	left:0;
+	right: 0;
+	bottom: 0;
+	height: 96%;
+	width: 97%;
+	margin:0 auto; 
+	background-color: #808080b5;
+	transition-duration: .4s;
+}
+.section-3 .aione-wrapper-1 h4{
+	color: white;
+    position: relative;
+    width: 85%;
+    background-color: #58605c;
+    margin: 0 auto;
+    top: 5%;
+    padding: 5px;
+    border-radius: 3px; 
+    transition-duration: .3s;
+}
+
+.section-3 .aione-wrapper-1 p{
+	color: white;
+    position: absolute;
+    margin: 0 auto;
+    top: 28%;
+    left: 200%;
+}
+.section-3 .aione-wrapper-1 :hover p{
+	position: absolute;
+	transition-delay: .3s;
+	transition-duration: .3s;
+	left: 15%;
+}
+
+
+
+
+
+
+
+
+.section-3 .aione-wrapper-2 {
+	border:1px solid;
+	height:231px;
+	padding:5px;
+	overflow: hidden;
+	position: relative;
+}
+.section-3 .aione-wrapper-2 h4{
+color:white;
+}
+.section-3 .aione-wrapper-2 img{
+	transform:scale(0.99);
+	height: 231px;
+	transition-duration: .5s;
+	transition-delay:.3s; 
+}
+.section-3 .aione-wrapper-2:hover img{
+	position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 231px;
+    transform:scale(0)rotate(360deg);
+    transition-duration: .5s;
+}
+
+.section-3 .aione-wrapper-2 .title{
+	position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 96%;
+    width: 97%;
+    margin: 0 auto;
+    background-color: #808080b5;
+    transform:scale(0);
+    transition-duration: .3s;
+}
+   
+.section-3 .aione-wrapper-2:hover .title{
+	transition-delay: .5s;
+	transform:scale(1) rotate(360deg);
+	transition-duration: .5s;
+}
+
+
+
+
+
+.section-3 .aione-row-1 .aione-wrapper-3{
+    	padding: 5px;
+    	border:1px solid;
+    	position: relative;
+    	overflow: hidden;
+	}
+.section-3 .aione-wrapper-3 .title{
+	position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 96%;
+    width: 97%;
+    margin: 0 auto;
+    background-color: #808080b5;
+    transform:scale(0);
+    transition-duration: .3s;
+}
+.section-3 .aione-row-1 .aione-wrapper-3:hover .image:before{
+		    position: absolute;
+    content: "";
+    left: -24%;
+    right: 0;
+    top: -122px;
+    transform: rotate3d(0, 0, 1, 44.2deg);
+    opacity: 1;
+    background: #5f6669c2;
+    overflow: hidden;
+    width: 81%;
+    height: 155%;
+    -webkit-transition: .3s ease;
+    transition: .5s ease;
+	}
+.section-3 .aione-row-1 .aione-wrapper-3:hover .image:after{
+		position: absolute;
+		content: "";
+    	left: 50%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+    	
+	}
+.section-3 .aione-row-1 .aione-wrapper-3 .image:before{
+		position: absolute;
+		content: "";
+    	left: -51%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+  
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+.section-3 .aione-row-1 .aione-wrapper-3 .image:after{
+		position: absolute;
+		content: "";
+    	left: 100%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+
+
+
+
+
+
+
+
+.section-3 .aione-row-1 .aione-wrapper-4{
+    	padding: 5px;
+    	border:1px solid;
+    	position: relative;
+    	overflow: hidden;
+	}
+.section-3 .aione-row-1 .aione-wrapper-4 .title{
+		position: absolute;
+    	left: 0;
+    	top:-20%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1;
+    	background: transparent;
+    	transform:scale(0); 
+    	overflow: hidden;
+    	width: 100%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .8s ease;
+	}
+
+	
+.section-3 .aione-row-1 .aione-wrapper-4:hover .image:before{
+		position: absolute;
+		content: "";
+    	left: 0;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+    	transform-origin: 100% 0;
+	}
+.section-3 .aione-row-1 .aione-wrapper-4:hover .image:after{
+		position: absolute;
+		content: "";
+    	left: 50%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+    	transform-origin: -100% 0;
+	}
+.section-3 .aione-row-1 .aione-wrapper-4 .image:before{
+		position: absolute;
+		content: "";
+    	left: -51%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+.section-3 .aione-row-1 .aione-wrapper-4 .image:after{
+		position: absolute;
+		content: "";
+    	left: 100%;
+    	right: 0;
+    	bottom: 0;
+    	opacity: 1; 
+    	background: #5f6669c2;
+    	overflow: hidden;
+    	width: 50%;
+    	height: 100%;
+    	-webkit-transition: .3s ease;
+    	transition: .5s ease;
+	}
+
+.section-3 .aione-row-1 .aione-wrapper-4:hover .title{
+		position: absolute;
+		transform: scale(1);
+		top: 2%;
+		transition-delay:.5s; 
+		opacity: 1;
+	}
+.section-3 .aione-row-1 .aione-wrapper-4:hover p{
+	 	transform:scale(1);
+	    transform: rotate(360deg);
+	    transition-duration: 1.6s;
+	    
+	   
+	    
+	}
+.section-3 .aione-row-1 .aione-wrapper-4 .title p{
+		top: 38%;
+		left: 25%;
+    	position: absolute;
+	}
+.section-3 .aione-row-1 .aione-wrapper-4 .title h4{
+	color: white;
+    position: relative;
+    width: 80%;
+    background-color: #58605c;
+    margin: 0 auto;
+    top: 5%;
+    padding: 5px;
+    border-radius: 3px; 
+    transition-duration: .4s
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+<!-----Animation section start----->
+<div class="section-1 p-50">
+		<div class="div"><h2 class="aione-align-center">Animation</h2></div>
+	<div class="aione-row-1 ar p-50 ph-8p">
+		<div class="aione-column-1 ac l33">
+		<div class="aione-wrapper-1 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/192/image-01.jpg" alt="error"></div>
+			<div class="title"> <p>Roeland</p></div>
+		</div>
+		</div>
+		<div class="aione-column-2 ac l33">
+		<div class="aione-wrapper-2 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/193/image-02.jpg" alt="error"></div>
+			<div class="title"> <p>Roeland</p></div>
+		</div>
+		</div><div class="aione-column-3 ac l33">
+		<div class="aione-wrapper-3 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/194/image-03.jpg" alt="error"></div>
+			<div class="title"> <p>Roeland</p></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-----Overlay section start----->
+
+<div class="section-2 p-50 mb-20">
+	<div class="div"><h2 class="aione-align-center">Overlay</h2></div>
+	<div class="aione-row-1 ar p-50 ph-8p">
+		<div class="aione-column-1 ac l25">
+		<div class="aione-wrapper-1 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/202/image-11.jpg" alt="error"></div>
+			<div class="title"><p>Roeland</p></div>
+		</div>
+		</div>
+		<div class="aione-column-2 ac l25">
+		<div class="aione-wrapper-2 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/198/image-07.jpg" alt="error"></div>
+			<div class="title"> <p>Roeland</p></div>
+		</div>
+		</div>
+		<div class="aione-column-3 ac l25">
+		<div class="aione-wrapper-3 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/195/image-04.jpg" alt="error"></div>
+			<div class="title"> <p>Roeland</p></div>
+		</div>
+		</div>
+		<div class="aione-column-4 ac l25">
+		<div class="aione-wrapper-4 aione-align-center ">
+			<div class="image">
+			<img src="https://zurb.com/playground/uploads/upload/upload/205/image-14.jpg" alt="error"></div>
+			<div class="title"> <p>Roeland</p></div>
+		</div>
+		</div>
+	</div>
+
+<!-----overlay row-2 start-----> 
+
+	<div class="aione-row-2 ar p-50 ph-8p ">
+		<div class="aione-column-1 ac l25">
+		<div class="aione-wrapper-1 aione-align-center ">
+			<div class="image">
+			<img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Falfredkonuwa%2Ffiles%2F2018%2F01%2FROME2-1200x800.jpg" style="height: 230px;" alt="error"></div>
+			<div class="title"> <p>Roman Reigns</p></div>
+		</div>
+		</div>
+		<div class="aione-column-2 ac l25">
+		<div class="aione-wrapper-2 aione-align-center ">
+			<div class="image">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6p8Bk5yUxEYHFOHJL-IP7y9Q7btiKOggJvHWY_cVJe6py0GIq" style="height: 230px" alt="error"></div>
+			<div class="title"> <p>johan cena</p></div>
+		</div>
+		</div>
+		<div class="aione-column-3 ac l25">
+		<div class="aione-wrapper-3 aione-align-center ">
+			<div class="image">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYpYVXXDuLHQMFnM-MZ0HdVSyjEN_2RJS41xqwalDgyozawOS6A" style="height: 230px" alt="error"></div>
+			<div class="title"> <p>Rem stereo</p></div>
+		</div>
+		</div>
+		<div class="aione-column-4 ac l25">
+		<div class="aione-wrapper-4 aione-align-center ">
+			<div class="image">
+			<img src="https://i.pinimg.com/originals/17/a1/92/17a19230cd82839350f4ebf6c043801a.jpg" style="height: 230px" alt="error"></div>
+			<div class="title"> <p>Batista</p></div>
+		</div>
+		</div>
+	</div>
+</div>
+
+<!-----aione animation start-----> 
+
+<div class="section-3 p-50 mb-20">
+	<div class="div"><h2 class="aione-align-center" style="padding: 5px; width: 435px;">Aione Animation</h2></div>
+	<div class="aione-row-1 ar p-50 ph-8p">
+		<div class="aione-column-1 ac l25">
+		<div class="aione-wrapper-1 aione-align-center  animate rotateInDownLeft">
+			<div class="image">
+			<img src="https://wikibio.in/wp-content/uploads/2019/04/Sidhu-Moose-Wala.jpg" alt="error"></div>
+			<div class="title"> <h4>Sidhu Moosa</h4> <p>Shubdeep singh sidhu<br> vill:- Moosa</p></div>
+		</div>
+		</div>
+		<div class="aione-column-2 ac l25">
+		<div class="aione-wrapper-2 aione-align-center animate swing ">
+			<div class="image">
+			<img src="https://pollytoo.com/wp-content/uploads/2019/06/Tarsem-Jassar-Biography1.png" alt="error"></div>
+			<div class="title"> <h4>Tarsem</h4> <p>Tarsem singh jassar<br>vill:- Amloh<br>Ludhiana</p></div>
+		</div>
+		</div>
+		<div class="aione-column-3 ac l25">
+		<div class="aione-wrapper-3 aione-align-center animate swing">
+			<div class="image">
+			<img src="https://www.biovoi.com/wp-content/uploads/2016/12/12592417_543771719134564_3399163504274108438_n.jpg" alt="error"></div>
+			<div class="title"> <div class="name"><h4>Ninja</h4></div> <div class="description"><p>Amit Bhalla <br>city:- Ludhiana</p></div></div>
+		</div>
+		</div>
+		<div class="aione-column-4 ac l25">
+		<div class="aione-wrapper-4 aione-align-center animate rotateInDownRight">
+			<div class="image">
+			<img  src="https://bollysuperstar.com/wp-content/uploads/2018/10/Akhil-Phone-Number.jpg" alt="error"></div>
+			<div class="title "> <h4>Akhil</h4> <p>Akhil Pasreja</p> </div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script> 
+<script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js">
+</script> 
+</body>
+</html>
