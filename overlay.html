@@ -58,6 +58,7 @@
     	transform: rotate(3.9deg);
     	padding: 5px 5px 2px 5px;
     	border:2px solid; 
+    	transition-duration: .3s;
 	}
 .section-1 .aione-wrapper-1:before{
 		position: absolute;
@@ -82,8 +83,8 @@
 	}
 .section-1 .aione-wrapper-1:hover{
 	    transform: rotate(0deg);
-    	transition-duration: 1s;
     	box-shadow: 0 0 12px -1px black;
+    	transition-duration: .3s;
 	}
 
 
@@ -98,12 +99,12 @@
 	}
 .section-1 .aione-wrapper-2 img{
 		transform: scale(1.8);
-		transition-duration: 3s;
+		transition-duration: .5s;
 		transition-delay: 2s: 
 	}
 .section-1 .aione-wrapper-2:hover img{
 		transform: scale(1);
-		transition-duration: 3s;
+		transition-duration: .5s;
 		transition-delay: 2s: 
 		box-shadow: 0 0 12px -1px black;
 	}
@@ -117,16 +118,19 @@
 	    background-color: #85858573;    
     	padding: 5px 5px 2px 5px;
     	border:2px solid;
+    	transition-duration: .3s;
 	}
 .section-1 .aione-wrapper-3:hover img{
 		transform: scale(1.4);
 		box-shadow: 0 0 12px -1px black;
-		transition-duration: 3s;
+		transition-duration: .3s;
 	}
 .section-1 .aione-wrapper-3 .image{
 		overflow: hidden;
 	}
-
+.section-1 .aione-wrapper-3 img{
+	transition-duration: .3s;
+}
 
 
 
@@ -190,7 +194,7 @@
 .section-2 .aione-wrapper-2 .title{
 		position: inherit;
 	    margin-top: -40px;
-		transition-duration: 1.7s; 
+		transition-duration: .7s; 
 		opacity: 0;
 	}
 .section-2 .aione-wrapper-2:hover .title{
@@ -219,7 +223,7 @@
     	width: 100%;
     	height: 20%;
     	-webkit-transition: .3s ease;
-    	transition: 3s ease;
+    	transition: .3s ease;
 	}
 .section-2 .aione-wrapper-3:hover .title{
 		position: absolute;
@@ -248,7 +252,7 @@
     	width: 100%;
     	height: 100%;
     	-webkit-transition: .3s ease;
-    	transition: 2s ease;
+    	transition: .3s ease;
 	}
 .section-2 .aione-wrapper-4:hover .title{
 		position: absolute;
@@ -266,6 +270,7 @@
 		background-color: #85858573;
     	padding: 5px 5px 2px 5px;
     	border:2px solid;
+    	overflow: hidden;
 	}
 .section-2 .aione-row-2 .aione-wrapper-1 .image img{
 		overflow: hidden;
@@ -692,18 +697,22 @@ color:white;
     	position: relative;
     	overflow: hidden;
 	}
+	.section-3 .aione-wrapper-3:hover h4{
+color: white;
+	}
 .section-3 .aione-wrapper-3 .title{
 	position: absolute;
-    top: 2%;
+    top: 100%;
     left: 0;
     right: 0;
     bottom: 0;
-    height: 96%;
+    height:100%;
     width: 97%;
-    margin: 0 auto;
-    background-color: #808080b5;
-    transform:scale(0);
+    background-color: transparent;
     transition-duration: .3s;
+}
+.section-3 .aione-wrapper-3:hover .title{
+	top:0;
 }
 .section-3 .aione-row-1 .aione-wrapper-3:hover .image:before{
 		    position: absolute;
@@ -722,18 +731,18 @@ color:white;
 	}
 .section-3 .aione-row-1 .aione-wrapper-3:hover .image:after{
 		position: absolute;
-		content: "";
-    	left: 50%;
-    	right: 0;
-    	bottom: 0;
-    	opacity: 1; 
-    	background: #5f6669c2;
-    	overflow: hidden;
-    	width: 50%;
-    	height: 100%;
-    	-webkit-transition: .3s ease;
-    	transition: .5s ease;
-    	
+    content: "";
+    left: 39.3%;
+    right: 0;
+    top: 0;
+    transform: rotate3d(0, 0, 1, 44.2deg);
+    opacity: 1;
+    background: #5f6669c2;
+    overflow: hidden;
+    width: 81%;
+    height: 155%;
+    -webkit-transition: .3s ease;
+    transition: .5s ease;
 	}
 .section-3 .aione-row-1 .aione-wrapper-3 .image:before{
 		position: absolute;
@@ -746,7 +755,6 @@ color:white;
     	overflow: hidden;
     	width: 50%;
     	height: 100%;
-  
     	-webkit-transition: .3s ease;
     	transition: .5s ease;
 	}
@@ -754,13 +762,14 @@ color:white;
 		position: absolute;
 		content: "";
     	left: 100%;
+    	top: -8%;
     	right: 0;
     	bottom: 0;
     	opacity: 1; 
     	background: #5f6669c2;
     	overflow: hidden;
     	width: 50%;
-    	height: 100%;
+    	height: 120%;
     	-webkit-transition: .3s ease;
     	transition: .5s ease;
 	}
@@ -1031,9 +1040,188 @@ color:white;
 </div>
 
 
+<div class="section-4 p-50 mb-20">
+	
+	<div class="aione-row-1 ar p-50 ph-8p">
+		<div class="aione-column-1 ac l25">
+		<div class="aione-wrapper-1 aione-align-center  animate rotateInDownLeft">
+			<div class="image">
+			<img src="https://0.s3.envato.com/files/111269376/img/f1.jpg" alt="error"></div>
+			<div class="title"> <h4>Sidhu</h4> <p>ipsum dit amit</p></div>
+		</div>
+		</div>
+		<div class="aione-column-2 ac l25">
+		<div class="aione-wrapper-2 aione-align-center animate swing ">
+			<div class="image">
+			<img src="https://0.s3.envato.com/files/111269376/img/f5.jpg" alt="error"></div>
+			<div class="title"> <h4>lorial</h4> <p>ipsum dit amit</p></div>
+		</div>
+		</div>
+		<div class="aione-column-3 ac l25">
+		<div class="aione-wrapper-3 aione-align-center animate swing">
+			<div class="image">
+			<img src="https://0.s3.envato.com/files/111269376/img/f3.jpg" alt="error"></div>
+			<div class="title"> <div class="name"><h4>lorial</h4></div> <div class="description"><p>ipsum dit amit</p></div></div>
+		</div>
+		</div>
+		<div class="aione-column-4 ac l25">
+		<div class="aione-wrapper-4 aione-align-center animate rotateInDownRight">
+			<div class="image">
+			<img  src="https://0.s3.envato.com/files/111269376/img/f4.jpg" alt="error"></div>
+			<div class="title "> <h4>lorial</h4> <p>ipsum dit amit</p> </div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+<style type="text/css">
+	.section-4 .aione-wrapper-1 {
+		position: relative;
+		padding:2px;
+		transition-duration: .4s;
+		border:5px solid powderblue;
+		border-left:5px solid blue;
+		border-top:5px solid blue;
+		border-radius:50%;
+		overflow: hidden;
+		transition-duration: 1s;
+	}
+	.section-4 p{
+		font-size:20px;
+		font-weight: 600; 
+	}
+	.section-4 .aione-wrapper-1 img{
+		overflow:hidden;
+		border-radius:50%;
+	}
+	.section-4 .aione-wrapper-1:hover .title{
+		top: 0;
+		transform: translate(0) rotate(0);
+		opacity: 0.5;
+		transition-duration: .3s;
+	}
+		.section-4 .aione-wrapper-1 .title{
+		    position: absolute;
+    top: -14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    opacity: 0;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: black;
+    font-size: 15px;
+    transform: translate(-246px, -2px) rotate(8deg);
+    border-radius:50%;
+
+	}
+	.section-4 .aione-wrapper-1:hover {
+		border:5px solid blue;
+		border-left:5px solid powderblue;
+		border-top:5px solid powderblue;
+		transition-duration: 1s;
+	}
+.section-4 .aione-wrapper-1 img{
+		overflow:hidden;
+		border-radius:50%;
+	}
 
 
 
+
+
+
+
+		.section-4 .aione-wrapper-2 .title{
+		    position: absolute;
+    top: -14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    opacity: 0;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: black;
+    font-size: 15px;
+    transform: translate(-246px, -2px) rotate(8deg);
+    border-radius:50%;
+
+	}
+.section-4 .aione-wrapper-2 img{
+		overflow:hidden;
+		border-radius:50%;
+	}
+
+
+
+
+
+
+		.section-4 .aione-wrapper-3 .title{
+		    position: absolute;
+    top: -14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    opacity: 0;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: black;
+    font-size: 15px;
+    transform: translate(-246px, -2px) rotate(8deg);
+    border-radius:50%;
+
+	}
+	.section-4 .aione-wrapper-3 img{
+		overflow:hidden;
+		border-radius:50%;
+	}
+
+
+
+
+
+
+.section-4 .aione-wrapper-4{
+	position:relative;
+	overflow: hidden;
+	border-radius: 50%;
+}
+.section-4 .aione-wrapper-4 img{
+		overflow:hidden;
+		border-radius:50%;
+	}
+		.section-4 .aione-wrapper-4 .title{
+		    position: absolute;
+    top: -14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f5f5f5;
+    opacity: 0;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    color: black;
+    font-size: 15px;
+    transform: translate(-246px, -2px) rotate(8deg);
+    border-radius:50%;
+	}
+.section-4 .aione-wrapper-4:hover .title{
+	top:0;
+	transform: translate(0) rotate(360deg);
+	transition-duration: .3s;
+	opacity:1;
+	transition: 1s cubic-bezier(0.25, 0.1, 0.35, 1.43);
+}
+</style>
 
 
 
