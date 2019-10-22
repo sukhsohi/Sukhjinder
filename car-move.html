@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aione Framework</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
+<style type="text/css">
+
+	.div{
+		position: relative;
+		overflow: hidden;
+		height: 375px;
+		
+	}
+	.car{
+		position: absolute;
+		animation: carmove 10s infinite; 
+		z-index: 1;
+	}
+	.wheel-1 {
+    position: absolute;
+    top: 40%;
+    left: 9.8%;
+    width: 96px;
+    animation: wheelf 10s infinite;
+    z-index: 2;
+}
+.wheel-2 {
+    position: absolute;
+    top: 40%;
+    left: 58%;
+    width: 96px;
+    animation:wheelb 10s infinite;
+    z-index:2;
+}
+@keyframes carmove{
+  from{
+  	position: absolute;
+    top:2%;
+   left:100%;}
+  to{
+  	position: absolute;
+   top:2%;
+    left:-100%;
+ transition-duration:10s;
+  }
+}
+@keyframes wheelf{
+  from{
+  	position: absolute;
+    top:60%;
+   left:106%;}
+  to{
+   top:60%;
+    left:-93%;
+ transition-duration:10s;
+ transform: rotate(-1200deg);
+  }
+}
+@keyframes wheelb{
+  from{
+  	position:absolute;
+    top:60%;
+   left:133%;}
+  to{
+  	position: absolute;
+   top:60%;
+    left:-68%;
+ transition-duration:10s;
+ transform: rotate(-1200deg);
+  }
+}
+
+.wadu{
+	position: absolute;
+	background-attachment: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 350px;
+	filter: blur(1px);
+
+}
+
+</style>
+</head>
+<body>
+	<div class="div ph-50">
+		
+	<img class="car" src="http://themes.semicolonweb.com/html/canvas/demos/car/images/revslider/4.png">
+
+	<img class="wheel-1" src="http://themes.semicolonweb.com/html/canvas/demos/car/images/moving-car/car-tier.png">
+	
+		<img class="wheel-2" src="http://themes.semicolonweb.com/html/canvas/demos/car/images/moving-car/car-tier.png">
+		<img class="wadu" src="https://begindot.com/wp-content/uploads/2018/06/background.jpg">
+
+</div>
+
+</body>
+</html>
