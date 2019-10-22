@@ -14,12 +14,13 @@
         .fa {
             color: white;
         }
-        
+        .scroll-1 , .aione-nav-item{
+background: #292525d1;          
+        }
       
-        .scroll-2 {
+        .scroll-2 , .scroll-1{
             padding: 0;
             height: 550px;
-            overflow-x: auto;
             overflow: hidden;
             position: relative;
         }
@@ -29,7 +30,7 @@
             position: absolute;
             margin: 0;
             padding: 0;
-            background: #111;
+           
             z-index: 1;
             display: inline-block;
         }
@@ -64,7 +65,7 @@
         }
         
         .scroll-2 {
-            background: aliceblue;
+            background: black;
         }
         
         .h {
@@ -82,7 +83,7 @@
 <!-- End of Head Section -->
 
 <body>
-        <div class="ar bg-black" style="opacity:0.9">
+        <div class="ar bg-black" style="opacity: 0.8">
             <div class="ac m100 l10 s100 bg-black scroll-1">
                 <img src="http://baha.malyarchuk.space/img/logo.png" class="p-2 mt-20 mb-20">
                 <hr>
@@ -229,3 +230,6 @@
     setInterval(update, 1000 / 60);
   }).call(this);</script>
 </html>
+
+
+
