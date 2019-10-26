@@ -4,14 +4,15 @@
 <head>
     <title>Demo</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
-    <style>
+    <style >
         body {
             line-height: 1.4;
             font-size: 17px;
         }
 
         .our_services .separator,
-        .our_portfolio .separator {
+        .our_portfolio .separator,
+        .seprator {
             width: 10%;
             margin-bottom: 25px;
         }
@@ -24,9 +25,12 @@
     /*menu bar style*/
         
         .aione-header {
-            border-bottom: 0;
+            border-bottom: 1px solid #abc;
             background: #ffffffde;
         }
+        .fixed{
+        	background:  #ffffffde;
+        	        }
         
         .aione-nav.horizontal {
             border-bottom: 1px solid transparent;
@@ -105,6 +109,44 @@
         .slider-title {
             margin-bottom: 10px;
         }
+
+    /* porto classes */
+
+        .p{
+        	animation: s 2s ;
+        	position: absolute;
+        	left: 44%;
+        	text-align: center;
+        }
+
+        
+        .o{
+        	animation: u 3s ;
+        	position: absolute;
+        	left: 46.1%;
+        	text-align: center;
+        }
+
+        .r{
+        	animation: k 4s ;
+        	position: absolute;
+        	left: 49%;
+        	text-align: center;
+        }
+
+        .t{
+        	animation: h 5s ;
+        	position: absolute;
+        	left: 51.5%;
+        	text-align: center;
+        }
+
+        .s{
+        	animation: i 6s ;
+        	position: absolute;
+        	left: 53.5%;
+        	text-align: center;
+        }
         
     /* our services section */
 
@@ -165,8 +207,8 @@
         }
         
        .aione-button {
-       	background-color: #3c83c1;
-       }
+       		background-color: #3c83c1;
+        }
         
         .our_portfolio a {
             color: white;
@@ -197,6 +239,95 @@
 			z-index: 2;
 			transition-duration: .5s;
 		}
+
+		/* Testimonial */
+
+		.section_testimonials {
+            background: #f7f7f7;
+            background-color: #EDEDED !important;
+            
+        }
+        
+        .section_testimonials .slider-wrapper {
+            top: 0;
+            position: relative;
+            width: 100%;
+            left: 0;
+            z-index: 1;
+        }
+        
+        .section_testimonials .slider-item {
+            padding-left: 80px;
+            padding-right: 80px;
+            margin-top: 0;
+        }
+
+        .section_testimonials .slider img {
+            width: 10%;
+            margin: 0 auto;
+            margin-bottom: 25px;
+
+        }
+        
+        .section_testimonials .slider.aione .owl-dots .owl-dot span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+        
+        .section_testimonials .slider.aione .owl-dots .owl-dot.active span {
+            background: #df483f;
+            border-color: #df483f;
+        }
+        
+        .section_testimonials blockquote:before {
+        	content: "“";
+        	position: absolute;
+            color: #212529 ;
+            left: 0;
+            top: 0;
+            display: block ;
+            font-size: 80px;
+            font-style: normal;
+            line-height: 1;
+            font-family: initial;  
+        }
+        
+        .section_testimonials blockquote:after {
+        	content: "”";
+        	position: absolute;
+        	bottom: -0.5em;
+        	right: 0;
+        	font-size: 80px;
+            color: #212529 ;
+            display: block ;
+            font-style: normal;
+            line-height: 1;
+            font-family: initial;
+        }
+        
+        .section_testimonials blockquote {
+            background: transparent ;
+            border-radius: 4px;
+            padding: 22px 20px;
+            position: relative;
+        }
+        
+        .section_testimonials p {
+            line-height: 1.5;
+            font-size: 1.30em;
+            color: #212529;
+            padding-left:50px;
+            padding-right: 50px;
+            font-family: sarpanch;
+           }
+        
+        .section_testimonials strong {
+            font-weight: 900;
+            font-size: .9em;
+            margin-bottom: 2px;
+            color: #111;
+        }
 
 	/*   aione-footer  */
 
@@ -276,12 +407,7 @@
 	/* key frames */
 
 		  
-        .p{
-        	animation: s 2s ;
-        	position: absolute;
-        	left: 44%;
-        	text-align: center;
-        }
+
         @keyframes s{
         	0%{ 
         		transform: translate(-30px , 0px);
@@ -296,12 +422,6 @@
         }
 
 
-       .o{
-        	animation: u 3s ;
-        	position: absolute;
-        	left: 46.1%;
-        	text-align: center;
-        }
         @keyframes u{
         		0%{ 
         		transform: translate(-35px , 0px);
@@ -316,12 +436,7 @@
         }
 
 
-		.r {
-        	animation: k 4s ;
-        	position: absolute;
-        	left: 48.7%;
-        	text-align: center;
-        }
+
         @keyframes k{
         		0%{ 
         		transform: translate(-40px , 0px);
@@ -337,12 +452,7 @@
 
 
 
- 		.t {
-        	animation: h 5s ;
-        	position: absolute;
-        	left: 51%;
-        	text-align: center;
-        }
+
         @keyframes h{
         		0%{ 
         		transform: translate(-45px , 0px);
@@ -357,12 +467,7 @@
         }
 
 
- 			 .s {
-        	animation: i 6s ;
-        	position: absolute;
-        	left: 52.8%;
-        	text-align: center;
-        }
+ 			
         @keyframes i{
         		0%{ 
         		transform: translate(-50px , 0px);
@@ -476,7 +581,7 @@
                                         <h3 class="aione-align-center pt-10">Our Services</h3>
                                         <hr class="separator">
                                         <div class="ar mb-40">
-                                            <div class="ac aione-column  l33 m100 s100">
+                                            <div class="ac aione-column  l33 m50 s100">
                                                 <div class="wrapper ar">
                                                     <div class="icon ac l20 m100 s100">
                                                         <i class="fa fa-heart"></i>
@@ -487,7 +592,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ac aione-column  l33 m100 s100">
+                                            <div class="ac aione-column  l33 m50 s100">
                                                 <div class="wrapper ar">
                                                     <div class="icon ac l20 m100 s100">
                                                         <i class="fa fa-heart"></i>
@@ -498,7 +603,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ac aione-column  l33 m100 s100">
+                                            <div class="ac aione-column  l33 m50 s100">
                                                 <div class="wrapper ar">
                                                     <div class="icon ac l20 m100 s100">
                                                         <i class="fa fa-heart"></i>
@@ -509,7 +614,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ac aione-column  l33 m100 s100">
+                                            <div class="ac aione-column  l33 m50 s100">
                                                 <div class="wrapper ar">
                                                     <div class="icon ac l20 m100 s100">
                                                         <i class="fa fa-heart"></i>
@@ -520,7 +625,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ac aione-column  l33 m100 s100">
+                                            <div class="ac aione-column  l33 m50 s100">
                                                 <div class="wrapper ar">
                                                     <div class="icon ac l20 m100 s100">
                                                         <i class="fa fa-heart"></i>
@@ -531,7 +636,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="ac  aione-column l33 m100 s100">
+                                            <div class="ac  aione-column l33 m50 s100">
                                                 <div class="wrapper ar">
                                                     <div class="icon ac l20 m100 s100">
                                                         <i class="fa fa-heart"></i>
@@ -548,7 +653,7 @@
         <!--  Start Product Section-->
 
                                     <section class="product mt-50 ph-50">
-                                        <div class="ar">
+                                        <div class="ar pv-35 ph-50">
                                             <div class="ac l40 m100 s100">
                                                 <div class="wrapper">
                                                     <img src="https://portotheme.com/html/porto/7.5.0/img/layout-styles.png" alt="layout">
@@ -650,6 +755,44 @@
                                             </div>
                                         </div>
                                     </section>
+
+                            <!--  Start Testimonial Section-->
+                                    <h3 class="aione-align-center ">Testimonial</h3>
+                                    <hr class="seprator">
+                                    <section class="section_testimonials pv-50">
+                                        <div class="slider-wrapper aione-align-center">
+                                            <div class="slider owl-carousel aione" data-nav-text="" data-items="1" data-margin="" data-loop="true" data-autoplay="true">
+                                                <div class="slider-item">
+                                                    	<img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
+                                                    <div class="content">
+                                                        <blockquote>
+                                                            <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
+                                                        </blockquote>
+                                                        <h6 class="mb-22"><strong>- John Smith. Okler</strong></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-item">
+	                                                	<img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
+                                                    <div class="content">
+                                                        <blockquote>
+                                                            <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
+                                                        </blockquote>
+                                                        <h6 class="mb-22"><strong>- John Smith. Okler</strong></h6>
+                                                    </div>
+                                                </div>
+                                                <div class="slider-item">
+                                                    	<img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
+                                                    <div class="content">
+                                                        <blockquote>
+                                                            <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
+                                                        </blockquote>
+                                                        <h6 class="mb-22" ><strong>- John Smith. Okler</strong></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+
                                 </div>
                             </div>
                             <!-- .aione-page-content -->
@@ -711,3 +854,5 @@
 </body>
 
 </html>
+
+
