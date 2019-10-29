@@ -6,18 +6,24 @@
      <link rel="icon" href="https://media.istockphoto.com/vectors/letter-s-mockup-logo-templete-design-lettering-tattoo-business-card-vector-id601136546?k=6&m=601136546&s=612x612&w=0&h=DdYPgObqb0X1UA1qZKGWxkX29mSz2VUDEBIEUX44Kdo=" type="image/jpg" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
     <style>
-        body {
-            background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hnd01gaCiu89hpk4/videoblocks-network-on-a-black-background-cinematic-plexus-background-seamless-loop_hagskxz4rm_thumbnail-full01.png");
+    	body{
+    		background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hnd01gaCiu89hpk4/videoblocks-network-on-a-black-background-cinematic-plexus-background-seamless-loop_hagskxz4rm_thumbnail-full01.png");
+    		line-height:1.5;
+    	}
+
+    	.scroll-1,
+        .scroll-2 {
+            padding: 3em;
+            height: 550px;
+            overflow-x: auto;
+            overflow-x: hidden;
         }
-        
+
         .scroll-2 {
             background: aliceblue;
             opacity: 0.9;
         }
-        .sukhi{
-        	margin-left: 32px;
-        }
-        
+
         .fa-2x {
             color: lightgrey;
         }
@@ -25,48 +31,79 @@
         .fa-2x:hover {
             color: white;
         }
-        
-        .fb {
+
+        /* scroll-1*/
+
+        .aione-nav.vertical ul li {
+    		display: block;
+    		float: none;
+            height: 60px;
+        }
+
+        /* scroll-2 */
+
+        /* about section */
+
+    	.sukhi{
+        	margin-left: 32px;
+        }
+
+        .sukhi{
+            width:200px
+        }
+
+        .cv-button{
+    		border: 2px solid grey;
+    	}
+
+    	.cv-button:hover {
+            background: grey;
+            color: white;
+        }
+
+    	.about_me h4{
+			color: white;
+        }
+
+      	.about_me p{
+            color: #abc;
+        }
+
+    	/* interests section */
+
+    	.wrapper{
+    		border-radius: 20px;
+    	}
+    	.my_interests a{
+    		color:#4f595d;
+    	}
+    	.my_interests .wrapper{
+    		text-align: center;
+    	}
+
+    	.interests-button {
             background: lightgrey;
             padding: 15px;
             border-radius: 10px;
             width: 75%;
         }
         
-        .fb:hover {
+        .interests-button:hover {
             background: black;
             color: white;
-            border: 1px double white;
+                box-shadow: 0 0 11px #f0efef;
         }
-        .aione-nav.vertical ul li {
-    display: block;
-    float: none;
-            height: 60px;}
-        
-        .scroll-1,
-        .scroll-2 {
-            padding: 3em;
-            height: 550px;
-            overflow-x: auto;
-            overflow-x: hidden;
-        }
-        
-        .k:hover {
-            background: grey;
-            color: white;
-        }
-        
-        .sec1 {
-            color: white;
-        }
+
     </style>
 </head>
 <!-- End of Head Section -->
-
 <body>
-    <div class="ar">
-        <div class="ac m10 l10 s100 bg-black scroll-1">
-             <a href="https://sukhsohi.github.io/sukhjinder.github.io/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6nwzprkTzkZPI59rmsfkd9w_SXtdK4MSzcITPUfbeYydwoxC&s" mv-20"></a> 
+	<div class="ar full-width">
+
+	<!--Menu bar-->
+
+        <div class="scroll-1 ac m10 l10 s100 bg-black ">
+             <a href="https://sukhsohi.github.io/sukhjinder.github.io/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6nwzprkTzkZPI59rmsfkd9w_SXtdK4MSzcITPUfbeYydwoxC&s" alt="error"></a> 
             <hr>
             <nav id="aione_nav" class="aione-nav effect-21 vertical aione-align-center">
                 <ul id="aione_menu" class="aione-menu bg-black ">
@@ -78,88 +115,94 @@
                 </ul>
             </nav>
         </div>
-        <div class="ac m90 p-50 scroll-2 ">
-            <h2 class="aione-align-center">About Me</h2>
-            <div style="" class="pt-10 p-10  bg-black">
+
+    <!--Page Content-->
+
+        <div class="scroll-2 ac m90 p-50 ">
+
+    <!--About me section-->
+
+    		<h2 class="aione-align-center">About Me</h2>
+            <section class="about_me p-20  bg-black">
                 <div class="ar">
                     <div class="ac m30 l30">
-                        <img src="https://instagram.fymy1-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/37967520_1947158118642226_2668842413732134912_n.jpg?_nc_ht=instagram.fymy1-2.fna.fbcdn.net&_nc_cat=110&oh=5e7e072a5e93dee42e7cc1a00533fc39&oe=5E1C4B6F&ig_cache_key=MTg0MzQwMDY3NTM1MjIxNjI3Mg%3D%3D.2" class="sukhi aione-align-center aione-circle" style="width:200px">
+                    	<img src="https://instagram.fymy1-2.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/37967520_1947158118642226_2668842413732134912_n.jpg?_nc_ht=instagram.fymy1-2.fna.fbcdn.net&_nc_cat=110&oh=5e7e072a5e93dee42e7cc1a00533fc39&oe=5E1C4B6F&ig_cache_key=MTg0MzQwMDY3NTM1MjIxNjI3Mg%3D%3D.2" class="sukhi aione-align-center aione-circle pt-10" alt="error">
                     </div>
-                    <div class="ac m70 l70 ">
-                        <h4 class="sec1">Sukhjinder Singh</h4>
-                        <p style="line-height:1.5;" class="sec1"> Hello! I’m Sukhjinder Singh a self-taught &amp; award winning Digital Designer with over 1 year work experience. I started in my room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in Punjab, India, working for OXO IT Solutions Pvt. Ltd and enjoying the life in the countryside.</p>
-                        <p style="line-height:1.5;" class="pt-10 pb-20 sec1">I have couple of hobbies but I like to travel. I am fond of fruit.</p>
+                    <div class="ac m70 l70 mt-24">
+                        <h4>Sukhjinder Singh</h4>
+                        <p class="pr-24"> Hello! I’m Sukhjinder Singh a self-taught &amp; award winning Digital Designer with over 1 year work experience. I started in my room, got pro at renowned digital agencies akij co and nork blue lebel. Now I’m based in Punjab, India, working for OXO IT Solutions Pvt. Ltd and enjoying the life in the countryside.</p>
+                        <p>I have couple of hobbies but I like to travel. I am fond of fruit.</p>
                     </div>
                 </div>
                 <div class="ar">
                     <div class="aione-align-center ac l25 m25">
-                        <div class="p-5 pt-10">
-                            <a href="https://docs.google.com/document/d/1mT1FF0osvtk3vONveVWW8IUWim4PXK35o2n6vbloSjU/" download class="k aione-button small rounded outline grey" style="border:2px solid grey ;"> Download CV</a>
+                        <div class="p-5 pt-20">
+                            <a href="https://docs.google.com/document/d/1mT1FF0osvtk3vONveVWW8IUWim4PXK35o2n6vbloSjU/" download class="cv-button aione-button small rounded outline grey "> Download CV</a>
                         </div>
                     </div>
                     <div class="aione-align-center ac l25 m25">
                         <div class="p-5">
-                            <i class="fa fa-trophy fa-2x p-5 aione-circle aione-border border-orange white" aria-hidden="true"></i>
+                            <i class="fa fa-trophy fa-2x p-5 aione-circle aione-border border-grey white" aria-hidden="true"></i>
                             <p>1 Years Job Experience</p>
                         </div>
                     </div>
                     <div class="aione-align-center ac l25 m25">
                         <div class="p-5">
-                            <i class="fa fa-sun-o fa-2x aione-circle p-5 aione-border border-orange white"></i>
+                            <i class="fa fa-sun-o fa-2x aione-circle p-5 aione-border border-grey white"></i>
                             <p>500+ Projects Completed</p>
                         </div>
                     </div>
                     <div class="aione-align-center ac l25 m25">
                         <div class="p-5">
-                            <i class="fa fa-user fa-2x aione-circle aione-border border-orange ph-8 p-5 white" aria-hidden="true"></i>
+                            <i class="fa fa-user fa-2x aione-circle aione-border border-grey ph-8 p-5 white" aria-hidden="true"></i>
                             <p> Freelance Available</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="aione-align-center p-10">
-                <h2>My Interests</h2>
-            </div>
-            <div style=" border-radius: 20px" class="pt-10 p-10  bg-black">
-                <div>
-                    <div class="ar ">
+            </section>
+
+            <!--Interests Section-->
+
+            <section class="my_interests">
+            	<h2 class="aione-align-center p-10">My Interests</h2>
+            	<div class="wrapper pt-10 p-10  bg-black">
+                    <div class="ar p-25">
                         <div class="ac l33 m33">
-                            <div class="p-5">
-                                <a style="color:#4f595d" href="file:///home/oxo/Desktop/sukh/protfolio/Music.html"> <i class="fa fa-music fb" aria-hidden="true">  Music</i></a>
+                            <div class="music pt-5">
+                                <a href="file:///home/oxo/Desktop/sukh/protfolio/Music.html"> <i class="fa fa-music interests-button" aria-hidden="true">  Music</i></a>
                             </div>
                         </div>
                         <div class="ac l33 m33">
-                            <div class="p-5">
-                                <a style="color:#4f595d" href="#"> <i class="fa fa-car fb" aria-hidden="true">  Travelling</i></a>
+                            <div class="travelling p-5 pb-15">
+                                <a href="#"> <i class="fa fa-car interests-button" aria-hidden="true">  Travelling</i></a>
                             </div>
                         </div>
                         <div class="ac l33 m33">
-                                <div class="p-5"><a style="color:#4f595d" href="#"><i class="fa fa-picture-o fb" aria-hidden="true">  Photos</i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="ar">
-                        <div class="ac l33 m33">
-                            <div class="p-5">
-                                <a style="color:#4f595d" href="#"> <i class="fa fa-film fb" aria-hidden="true">  Movies</i></a>
-                            </div>
-                        </div>
-                        <div class="ac l33 m33">
-                            <div class="p-5">
-                                <a style="color:#4f595d" href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en_IN"> <i class="fa fa-gamepad fb" aria-hidden="true">  Video games</i></a>
-                            </div>
-                        </div>
-                        <div class="ac l33 m33">
-                            <div class="p-5">
-                                <a style="color:#4f595d" href="#"> <i class="fa fa-book fb" aria-hidden="true">  Poetry Books </i></a>
-                            </div>
-                        </div>
-                    </div>
+                            <div class="photos p-5 pb-15">
+                            	<a href="#"><i class="fa fa-picture-o interests-button" aria-hidden="true">  Photos</i></a>
+                        	</div>
+                    	</div>
+                    	<div class="ar">
+                    		<div class="ac l33 m33">
+                           		<div class="movies p-5 pb-15">
+                                	<a href="#"> <i class="fa fa-film interests-button" aria-hidden="true">  Movies</i></a>
+                            	</div>
+                        	</div>
+                        	<div class=" ac l33 m33">
+                            	<div class="games p-5">
+                                	<a href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=en_IN"> <i class="fa fa-gamepad interests-button" aria-hidden="true">  Video games</i></a>
+	                            </div>
+    	                    </div>
+        	                <div class="ac l33 m33">
+            	                <div class="poetry p-5">
+                	                <a href="#"> <i class="fa fa-book interests-button" aria-hidden="true">  Poetry Books </i></a>
+                            	</div>
+                        	</div>
+                    	</div>
+                	</div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
-    </div>
 </body>
-
 </html>
