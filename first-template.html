@@ -1,7 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+ <!DOCTYPE html>
+ <html>
+ <head>
     <title>Aione Framework</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
@@ -10,103 +9,193 @@
             background-image: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
             background-size: auto;
             background-repeat: no-repeat;
-                line-height: 22px;
+            line-height: 22px;    
+            line-height: 1.6;
+            font-size: 16px;
         }
-        
-        .aione-wrapper>.wrapper {
-            margin: 0 auto;
+
+        .section1, .section2, .section3, .section4{
+            outline: none;
         }
-        
-        div.scroll {
+
+    /* Menu Side */
+
+        .menu {
             padding: 4px;
             height: 580px;
             overflow-x: hidden;
             overflow-x: auto;
+            background-color: black;
+        }
+
+        .menu img{
+            width: 80%;
+            border-radius: 50%;
+            border: 1px solid;
+            filter: drop-shadow(2px 4px 6px black);
+        }
+
+        .my-name{
+            color: aqua;
         }
         
-        div.scroll2 {
+        .designation{
+            color: cadetblue;
+        }
+
+        .nav-item-text{
+            color: white;
+        }
+
+    /* Content Side */
+
+        .content-side {
             padding: 4px;
+            background:#000000d1; 
+            opacity: 0.9;
             height: 580px;
             overflow-x: hidden;
             overflow-x: auto;
         }
+
+        .heading{
+            color: cadetblue;
+        }
+
+    /* My Work Section */
+
+        .my_work_section .nav *{
+            color: orange;
+        }
+
+        .my_work_section .nav *:hover{
+            color: white;
+            background-color: black;
+        }
+
+        .aione-nav{
+            background: bottom; 
+        }
+
+        .content img {
+            width: 95%;
+            height: 250px;
+            margin-bottom: 3%;
+        }
+
+    /* Contact Me Section */
+
+        .form{
+            background: bottom;
+        }
+
+        .name, .email {
+            width: 24%;
+            margin: 6px;
+            margin-bottom: 2.5%;
+            margin-top: 2.5%;
+        }
+
+        .subject{
+            width: 51%;
+        }
+
+        .message{
+            width: 51%;
+            height: 50px;
+        }
+
     </style>
 </head>
-
-<body class="">
+<body>
     <div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
         <div class="wrapper">
-            <!-- Start aione-header Section-->
             <div id="aione_main" class="aione-main fullwidth ">
                 <div class="wrapper ar pv-1 ">
-                    <div class="scroll ac l15 s100 m15 p-0 aione-align-center ml-3 ">
-                        <img src="https://scontent-sea1-1.cdninstagram.com/v/t51.2885-15/e35/60640182_2171583869603392_4788286217097372646_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_cat=104&se=8&oh=6c133a7b19cc082bbc5d449832895d6f&oe=5E1BDD61&ig_cache_key=MjA1Mjc5NTczNDU3MDczNzEwMQ%3D%3D.2" alt="" class=" mt-30" style="border-radius: 50%; border: 1px solid; filter: drop-shadow(2px 4px 6px black);">
-                        <h3 style="color: cadetblue;">Sharry</h3>
-                        <p class="p-10" style="color: aqua;">sohi </p>
-                        <p style="color: aqua;">Web designer </p>
+
+                <!--Menu Side-->
+
+                    <div class="menu ac l15 s100 m15 p-0 aione-align-center ml-3 ">
+                        <img src="http://frenify.com/envato/marketify/html/arlo/1/img/hero/img.jpg" alt="" class="mt-30" >
+                        <h3 class="my-name">Sharry</h3>
+                        <p class="my-name p-10" >sohi </p>
+                        <p class="designation" >Web designer </p>
+                        
+                    <!--Main menu-->
+
                         <div id="aione_header" class="aione-header mt-5">
-                            <nav id="aione_nav" class="aione-nav underline-right vertical p-15" style="background: bottom; ">
+                            <nav id="aione_nav" class="aione-nav underline-right vertical p-15" >
                                 <ul id="aione_menu" class="aione-menu aione-align-center ">
                                     <li class="aione-nav-item level0">
                                         <a href="#section1">
-                                            <span class="nav-item-text" data-hover="About me" style="color: white;">About me</span></a>
+                                            <span class="nav-item-text" data-hover="About me">About me</span></a>
                                     </li>
                                     <li class="aione-nav-item level0">
                                         <a href="#section2">
-                                            <span class="nav-item-text" data-hover="What I'm good at?" style="color: white;">What I'm good at?</span></a>
+                                            <span class="nav-item-text" data-hover="What I'm good at?" >What I'm good at?</span></a>
                                     </li>
                                     <li class="aione-nav-item level0">
                                         <a href=" #section3">
-                                            <span class="nav-item-text" data-hover="My Work" style="color: white;">My Work</span></a>
+                                            <span class="nav-item-text" data-hover="My Work" >My Work</span></a>
                                     </li>
-                                    <li class="aione-nav-item level0"><a href="#section4"><span class="nav-item-text" data-hover="Contact Me" style="color: white;">Contact Me</span></a></li>
+                                    <li class="aione-nav-item level0"><a href="#section4"><span class="nav-item-text" data-hover="Contact Me" >Contact Me</span></a></li>
                                 </ul>
                             </nav>
                         </div>
-                        <!--aione-social-icon-->
+
+                    <!--aione-social-icon-->
+                        
                         <ul class="aione-social-icons small circle horizontal dark-solid p-15">
                             <li class="facebook"><a href="https://www.facebook.com/oxosolutions" target="_blank"><span class="icon hover white"></span><span class="label">Facebook</span></a></li>
                             <li class="twitter"><a href="https://twitter.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Twitter</span></a></li>
                             <li class="youtube"><a href="https://www.youtube.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Youtube</span></a></li>
                             <li class="github"><a href="https://github.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Github</span></a></li>
                         </ul>
+
                         <!-- .aione-copyright -->
+                        
                         <div id="aione_copyright" class="aione-copyright">
                             <div class="wrapper p-25"> Copyright 2019 Aione framework </div>
                         </div>
                     </div>
-                    <!--content-->
-                    <div class="scroll2 ac l85 s100 m85 p-0 aione-align-center aione_nav white " style="background:#000000d1; opacity: 0.9;">
-                        <!--start-section-1-->
-                        <div class="section1 " id="section1">
-                            <div class="heading p-20">
-                                <h2><strong style="color: cadetblue;"> About Me </strong></h2>
-                                <p class=" p-15 font-size-15" style="">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+                <!--content Side-->
+                    
+                    <div class="content-side ac l85 s100 m85 p-0 aione-align-center aione_nav white " style="">
+                        
+                <!--About Section-->
+                        
+                        <section class="about_section " id="section1">
+                            <div class=" p-20">
+                                <h2 class="heading">About Me </h2>
+                                <p class=" p-15 font-size-15" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
                             </div>
-                            <div id="section1-content" class="section1-content ar p-10">
-                                <div class="ac l50 p-10 animate fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
-                                    <img src="https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D5760%252C3840%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1067%26image_uri%3Dhttp%253A%252F%252Fo.aolcdn.com%252Fhss%252Fstorage%252Fmidas%252Fb3f454047b0cf0c70c03a0b4ed8bb08e%252F206188047%252Fman-using-laptop-at-desk-in-home-office-picture-id748345779%26client%3Da1acac3e1b3290917d92%26signature%3D08117ae3154aabd530e4f8fb18d1ec79dad6a417&client=amp-blogside-v2&signature=49fbc2e7197808c972c238672cd71e1a57c0e76f" alt="" style="border-radius: 5%">
+                            <div class="aione-row ar p-10">
+                                <div class="ac l50 p-10 animate fadeInLeft">
+                                    <img src="https://o.aolcdn.com/images/dims?quality=85&image_uri=https%3A%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D5760%252C3840%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C1067%26image_uri%3Dhttp%253A%252F%252Fo.aolcdn.com%252Fhss%252Fstorage%252Fmidas%252Fb3f454047b0cf0c70c03a0b4ed8bb08e%252F206188047%252Fman-using-laptop-at-desk-in-home-office-picture-id748345779%26client%3Da1acac3e1b3290917d92%26signature%3D08117ae3154aabd530e4f8fb18d1ec79dad6a417&client=amp-blogside-v2&signature=49fbc2e7197808c972c238672cd71e1a57c0e76f" alt="" >
                                 </div>
-                                <div class="ac l50 p-35 animate fadeInRight" style="visibility: visible; animation-name: fadeInRight;">
-                                    <h3><strong style="color: cadetblue;">Reflux HTML CSS Template</strong></h3>
+                                <div class="ac l50 p-35 animate fadeInRight">
+                                    <h3 class="heading">Reflux HTML CSS Template</h3>
                                     <p class="p-10 font-size-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
                                     <a href="#" class="aione-button medium rounded bg-blue-grey bg-lighten-1 "> Read More</a>
                                 </div>
                             </div>
                             <div class="ar pv-10">
                                 <div class="ac l50 p-35 ">
-                                    <h3><strong style="color: cadetblue;">Sed sagittis rhoncus velit</strong></h3>
+                                    <h3 class="heading">Sed sagittis rhoncus velit</h3>
                                     <p class="p-15 font-size-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                                     <a href="#" class="aione-button medium rounded bg-blue-grey bg-lighten-1 "> Read More</a>
                                 </div>
                                 <div class="ac l50 mt-20">
-                                    <img src="https://www.officeforstudents.org.uk/media/1118/new-office-for-students-research-to-focus-on-value-for-money.jpg" alt="" style="border-radius: 5%">
+                                    <img src="https://www.officeforstudents.org.uk/media/1118/new-office-for-students-research-to-focus-on-value-for-money.jpg" alt="" >
                                 </div>
                             </div>
-                        </div>
-                        <!--start-section-2-->
-                        <div class="section2 ar p-30 bg-grey-lighten5 " id="section2">
-                            <h2 style="color: cadetblue;"> What I'm good at?</h2>
+                        </section>
+
+                <!---Whats good section-->
+                        
+                        <section class="whats_good_section ar p-30 bg-grey-lighten5 " id="section2">
+                            <h2 class="heading"> What I'm good at?</h2>
                             <p class="p-50">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
                             <div class="gallery gallery-columns-2 margin landscape theme-pointer animation-zoom ">
                                 <div class="gallery-item ">
@@ -136,64 +225,68 @@
                                     <div class="gallery-caption"> </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--start-section-3-->
-                        <div class="section3 p-25 aione-align-center" id="section3">
-                            <h2 style="color: cadetblue;">My Work</h2>
+                        </section>
+
+                <!--My Work section-->
+                        
+                        <section class="my_work_section p-25 aione-align-center" id="section3">
+                            <h2 class="heading">My Work</h2>
                             <p>Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.</p>
                             <div class="aione-tabs horizontal align-center theme-clean margin">
                                 <div class="nav p-15">
-                                    <div data-target="#tab_all" class="active" style="color:burlywood;">All </div>
-                                    <div data-target="#tab_people" class="" style="color:burlywood;">People </div>
-                                    <div data-target="#tab_nature" class="" style="color:burlywood;">Nature </div>
-                                    <div data-target="#tab_animals" class="" style="color:burlywood;">Animals </div>
+                                    <div data-target="#tab_all" class="active" >All </div>
+                                    <div data-target="#tab_people" class="" >People </div>
+                                    <div data-target="#tab_nature" class="" >Nature </div>
+                                    <div data-target="#tab_animals" class="" >Animals </div>
                                 </div>
                                 <div class="content">
                                     <div id="tab_all" class="active ">
-                                    	<div class="ar">
-                                        <div class="ac l50 p-10"> <img src="https://static-blog.treebo.com/wp-content/uploads/2018/07/Gulmarg.jpg" alt=""> </div>
-                                        <div class="ac l50 p-10"> <img src="https://admin.freetour.com/images/tours/4849/free-bike-tour-lisbon-02.jpg" alt="" style="width:100%; height:350px"> </div>
-                                        <div class="ac l50 p-10"> <img src="https://scontent-sea1-1.cdninstagram.com/v/t51.2885-15/e35/60640182_2171583869603392_4788286217097372646_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_cat=104&se=8&oh=6c133a7b19cc082bbc5d449832895d6f&oe=5E1BDD61&ig_cache_key=MjA1Mjc5NTczNDU3MDczNzEwMQ%3D%3D.2" alt="" style="width:100%; height:350px"> </div>
-                                        <div class="ac l50 p-10"> <img src="glry4.jpg" alt=""> </div>
-                                        <div class="ac l50 p-10"> <img src="glry5.jpg" alt=""> </div>
-                                        <div class="ac l50 p-10"> <img src="glry6.jpg" alt=""> </div>
+                                        <div class="ar">
+                                        <div class="ac l33 p-10"> <img src="https://static-blog.treebo.com/wp-content/uploads/2018/07/Gulmarg.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="https://admin.freetour.com/images/tours/4849/free-bike-tour-lisbon-02.jpg" alt="" > </div>
+                                        <div class="ac l33 p-10"> <img src="https://scontent-sea1-1.cdninstagram.com/v/t51.2885-15/e35/60640182_2171583869603392_4788286217097372646_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_cat=104&se=8&oh=6c133a7b19cc082bbc5d449832895d6f&oe=5E1BDD61&ig_cache_key=MjA1Mjc5NTczNDU3MDczNzEwMQ%3D%3D.2" alt="" > </div>
+                                        <div class="ac l33 p-10"> <img src="glry4.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="glry5.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="glry6.jpg" alt=""> </div>
                                         </div>
                                     </div>
                                     <div id="tab_people" >
-                                    	<div class="ar">
-                                        <div class="ac l50 p-10"> <img src="glry2.jpg" alt=""> </div>
-                                        <div class="ac l50 p-10"> <img src="https://scontent-sea1-1.cdninstagram.com/v/t51.2885-15/e35/60640182_2171583869603392_4788286217097372646_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_cat=104&se=8&oh=6c133a7b19cc082bbc5d449832895d6f&oe=5E1BDD61&ig_cache_key=MjA1Mjc5NTczNDU3MDczNzEwMQ%3D%3D.2" alt=""  style="width:100%; height:350px"> </div>
+                                        <div class="ar">
+                                        <div class="ac l33 p-10"> <img src="glry2.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="https://scontent-sea1-1.cdninstagram.com/v/t51.2885-15/e35/60640182_2171583869603392_4788286217097372646_n.jpg?_nc_ht=scontent-sea1-1.cdninstagram.com&_nc_cat=104&se=8&oh=6c133a7b19cc082bbc5d449832895d6f&oe=5E1BDD61&ig_cache_key=MjA1Mjc5NTczNDU3MDczNzEwMQ%3D%3D.2" alt=""  > </div>
                                         </div>
                                     </div>
                                     <div id="tab_nature" class="ar">
-                                        <div class="ac l50 p-10"> <img src="glry1.jpg" alt=""> </div>
-                                        <div class="ac l50 p-10"> <img src="https://admin.freetour.com/images/tours/4849/free-bike-tour-lisbon-02.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="glry1.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="https://admin.freetour.com/images/tours/4849/free-bike-tour-lisbon-02.jpg" alt=""> </div>
                                     </div>
                                     <div id="tab_animals" class="ar">
-                                        <div class="ac l50 p-10"> <img src="glry3.jpg" alt=""> </div>
-                                        <div class="ac l50 p-10"> <img src="https://admin.freetour.com/images/tours/4849/free-bike-tour-lisbon-02.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="glry3.jpg" alt=""> </div>
+                                        <div class="ac l33 p-10"> <img src="https://admin.freetour.com/images/tours/4849/free-bike-tour-lisbon-02.jpg" alt=""> </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!--start-section-4-->
-                        <div class="section4 aione-align-center p-15 " id="section4">
-                            <h2 style="color: cadetblue;">Contact Me</h2>
+                        </section>
+
+                <!--Contact Section-->
+                        
+                        <section class="contact_section aione-align-center p-15 " id="section4">
+                            <h2 class="heading">Contact Me</h2>
                             <p>Fusce eget nibh nec justo interdum condimentum. Morbi justo ex, efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                            <form class="aione-nav black" style="background: bottom;">
-                                <input name="name" type="text" placeholder="Your Name" required="" maxlength="20" minlength="3" style="width: 35%;" class="p-7 mt-30 mb-30 ">
-                                <input name="e-mail" type="email" placeholder="Your E-mail" required="" style="width: 35%" class="p-7">
-                                <input name="subject" type="text" placeholder="Subject" required="" style="width: 70%" class="p-7 mb-30">
-                                <input name="message" type="message" placeholder="your Message" style="width:70%;" class="p-10 mb-30">
-                                <br> <a href="#" class="aione-button medium circle bg-blue-grey bg-lighten-1 hover "> Send Message</a> </form>
-                        </div>
+                            <form class="form black">
+                                <input name="name" type="text" placeholder="Your Name" required="" maxlength="20" minlength="3"  class="name p-7 mt-30 mb-30 ">
+                                <input name="e-mail" type="email" placeholder="Your E-mail" required=""  class="email p-7"><br>
+                                <input name="subject" type="text" placeholder="Subject" required="" class="subject p-7 mb-30"><br>
+                                <input name="message" type="text"   class="message p-10 mb-30">
+                                <br> <a href="#" class="aione-button medium rounded bg-blue-grey bg-lighten-1 hover "> Send Message</a> </form>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js">
-	</script> 
+    </script> 
 <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js">
 </script>
 </body>
