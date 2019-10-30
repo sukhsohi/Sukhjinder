@@ -8,65 +8,88 @@
     <style>
         body {
             background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Hnd01gaCiu89hpk4/videoblocks-network-on-a-black-background-cinematic-plexus-background-seamless-loop_hagskxz4rm_thumbnail-full01.png");
+            line-height: 1.5;
         }
-        input{
-          font-size: 20px; 
-        }
-        input:focus {
-            outline: none;
-            color: darkkhaki;
-        }
-        
-        .scroll-2 {
-            padding: 3em;
-            background: aliceblue;
-            opacity: 0.8;
-        }
-        
+
         .fa {
             color: white;
         }
-                .aione-nav.vertical ul li {
-    display: block;
-    float: none;
-            height: 60px;}
-        
+
         .scroll-1,
         .scroll-2 {
             height: 550px;
             overflow-x: auto;
             overflow-x: hidden;
         }
-        
-        .aione-button:hover {
-            background-color: black;
-            color: white;
-            border: 2px solid white;
+
+        .scroll-2 {
+            padding: 3em;
+            background: aliceblue;
+            opacity: 0.8;
         }
-        
-        .section-1,
-        .section-2 {
+
+        .form_section , .address_section{
             border-radius: 10px;
         }
-        
-        .section-2 p {
-            padding-top: 15px;
-            font-weight: 5px;
+
+        /* Header */
+
+        .aione-nav.vertical ul li {
+            display: block;
+            float: none;
+            height: 60px;
+        }
+
+        /* Form Section */
+
+        input{
+            font-size: 20px;
+        }
+
+        input:focus {
+            outline: none;
+            color: darkkhaki;
+        }
+
+        .name, .email{
+            margin: 7px;
+            width:48%;
+            height:55px;
+            background:bottom;
+            border: none;
+            border-bottom:2px solid lightgrey;
         }
         
-        .section-2 p 1 {
-            padding-top: 15px;
-            font-weight: 5px;
+        .message{
+            margin: 7px;
+            width:98%;
+            height:105px;
+            background:bottom;
+            border:none;
+            border-bottom:2px solid lightgrey;
+            margin-top: 3%;
+            margin-bottom: 5%;
         }
+
+        
     </style>
 </head>
 <!-- End of Head Section -->
 
 <body>
     <div class="ar">
+
+        <!--Scroll-1-->
+        
         <div class="ac m10 l10 s100 bg-black scroll-1">
-             <a href="https://sukhsohi.github.io/sukhjinder.github.io/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6nwzprkTzkZPI59rmsfkd9w_SXtdK4MSzcITPUfbeYydwoxC&s" mv-20"></a>
+
+            <!--logo image-->
+
+             <a href="https://sukhsohi.github.io/sukhjinder.github.io/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg6nwzprkTzkZPI59rmsfkd9w_SXtdK4MSzcITPUfbeYydwoxC&s" alt="error"></a>
             <hr>
+
+            <!--Main Menu-->
+
             <nav id="aione_nav" class="aione-nav effect-21 vertical aione-align-center">
                 <ul id="aione_menu" class="aione-menu bg-black ">
                     <li class="aione-nav-item level0 bg-black "><a href="index.html"><i class="fa fa-home fa-2x"></i></a></li>
@@ -76,36 +99,47 @@
                     <li class="aione-nav-item level0"><a href="contact-portfolio.html"><i class="fa fa-comment-o fa-2x"></i></a></li>
                 </ul>
             </nav>
+
+            <!-- / Main Menu -->
+
         </div>
+
+        <!--Scroll-2-->
+
         <div class="ac m90 l90 s100 p-50 scroll-2 ">
             <h2 class="aione-align-center">Contact</h2>
-            <div class="section-1 p-10 pt-10 bg-black">
-                <div class="form">
-                  <input type="text" placeholder="Name" name="Name" minlength="3" required style="width:48%; height:55px; background:bottom; border: 2px solid black; border-bottom:2px solid lightgrey">
-                  <input type="Email" placeholder="Email" required style="width:48%; height:55px; background:bottom; border: 2px solid black; border-bottom:2px solid lightgrey; margin-left:15px;">
+
+            <!--Form section-->
+            <div class="form_section p-40 bg-black">
+                <div class="form aione-align-center">
+                  <input class="name" type="text" placeholder="Name" name="Name" minlength="3" required >
+                  <input class="email" type="Email" placeholder="Email" required >
                   <br>
-                  <input type="Message" placeholder="Message" required style="width:99%; height:105px; background:bottom; border: 2px solid black; border-bottom:2px solid lightgrey; margin-top:4%">
+                  <input class="message " type="text" placeholder="Message" required >
                   <br>
-                  <input type="submit" value="submit" style="margin-left:47%; margin-top:8%; border:2px solid white;">
+                  <input class="submit-button rounded outline" type="submit" value="submit">
                 </div>
             </div>
-            <div class="section-2 mt-12p p-30 bg-black white">
+
+            <!--Address Section-->
+
+            <div class="address_section mt-12p p-30 bg-black white">
                 <div class="ar p-1">
                     <div class="ac l33 m33 p-10 aione-align-center">
                       <i class="fa fa-envelope-o fa-2x"></i>
                       <br>
                       <p>example@example.com</p>
-                      <p 1>Email</p 1>
+                      <p>Email</p>
                     </div>
                     <div class="ac l33 m33 p-10 aione-align-center">
                       <i class="fa fa-map-marker fa-2x"></i>
                       <p>158 Lorem Ipsum, Amritsar</p>
-                      <p 1>Addres</p 1>
+                      <p>Addres</p>
                     </div>
                     <div class="ac l33 m33 p-10 aione-align-center ">
                       <i class="fa fa-mobile fa-2x"></i>
                       <p>98555-00001</p>
-                      <p 1>Mobile</p 1>
+                      <p>Mobile</p>
                     </div>
                 </div>
             </div>
