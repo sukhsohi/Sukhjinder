@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aione Framework</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
+<style>
+	body{
+		padding: 50px 0;
+	}
+	p{
+		line-height: 1.5;
+	}
+	h3{
+		font-family: serif;
+	}
+	input[type="checkbox"] {
+    margin-top: 5px;
+}
+input[type="radio"]{
+	margin-top: 10px;
+}
+	.gform_wrapper{
+		width: 75%;
+		margin:0 auto; 
+		background-color: #f5f5f5;
+		border: 1px solid;
+	}
+	.gfield_label{
+		font-size: 17px;
+		font-weight: 500;
+		color: #505050;
+	}
+</style>
+</head>
+<!-- End of Head Section -->
+<body>
+	<div class="gform_wrapper " >
+		<form method="post" class="ph-40 pt-15 pb-40">
+			<h3 class="gform_title aione-align-center mb-10p">Client’s Requirement</h3>
+			<div class="gform_body ">
+				<div class="personal-detail ar mb-25">
+					<div class="your-name ac l50 m100 s100">
+						<label class="gfield_label mb-5">Your Name :</label>
+						<input type="text" value="" aria-required="true"><br>
+					</div>
+					<div class="project-name ac l50 m100 s100">
+						<label class="gfield_label mb-5">Your Project Name :</label>
+						<input type="text" value="" aria-required="true"><br>
+					</div>
+				</div>
+				<div class="important ar mb-25">
+					<div class="total-page ac l50 m100 s100">
+			            <label class="gfield_label" for="input_2_1">Total Number of Pages</label><br>
+			            <input type="number" value="" aria-required="true"><br><br>
+			        </div>
+		    	    <div class="logo ac l50 m100 s100">
+		        	    <label class="gfield_label">Do you want a new logo ?</label><br>
+						<input name="input_4" type="radio" value="Yes" >
+						<label for="choice_2_4_0" id="label_2_4_0">Yes</label><br>
+						<input name="input_4" type="radio" value="No" >
+						<label for="choice_2_4_1" id="label_2_4_1">No</label><br>
+					</div>
+				</div>
+	            <div class="pages ar mb-25">
+	            	<div class="select-pages ac l50 m100 s100">
+			            <label class="gfield_label">Select the Page Names :</label><br>
+			            <input name="input_2.1" type="checkbox" value="Home" >
+			            <label for="choice_2_2_1" id="label_2_2_1">Home</label><br>
+			            <input name="input_2.2" type="checkbox" value="About">
+			            <label for="choice_2_2_2" id="label_2_2_2">About</label><br>
+			            <input name="input_2.3" type="checkbox" value="Team" >
+			            <label for="choice_2_2_3" id="label_2_2_3">Team</label><br>
+			            <input name="input_2.4" type="checkbox" value="Product" >
+			            <label for="choice_2_2_4" id="label_2_2_4">Product</label><br>
+			            <input name="input_2.5" type="checkbox" value="Service" >
+			            <label for="choice_2_2_5" id="label_2_2_5">Service</label><br>
+			            <input name="input_2.6" type="checkbox" value="Gallery" >
+			            <label for="choice_2_2_6" id="label_2_2_6">Gallery</label><br>
+			            <input name="input_2.7" type="checkbox" value="Contact Us" >
+			            <label for="choice_2_2_7" id="label_2_2_7">Contact Us</label><br>
+			            <input name="input_2.8" type="checkbox" value="Other" >
+	    		        <label for="choice_2_2_8" id="label_2_2_8">Other</label><br><br>
+	        		</div>
+	        		<div class="information ac l50 m100 s100">
+						<label class="gfield_label">Provide the below information :</label><br>
+						<input name="input_3.1" type="checkbox" >
+						<label for="choice_2_3_1" id="label_2_3_1">Social Media Links</label><br>
+						<input name="input_3.2" type="checkbox">
+						<label for="choice_2_3_2" id="label_2_3_2">Mobile Number</label><br>
+						<input name="input_3.3" type="checkbox">
+						<label for="choice_2_3_3" id="label_2_3_3">Email Id</label><br>
+						<input name="input_3.4" type="checkbox">
+						<label for="choice_2_3_4" id="label_2_3_4">Contact Address</label><br>
+						<input name="input_3.5" type="checkbox">
+						<label for="choice_2_3_5" id="label_2_3_5">Map</label><br><br>
+					</div>
+				</div>
+				<div class="form-information ar mb-25">
+					<div class="ac l50 m100 s100">
+						<label class="gfield_label">Select the Form Fields</label><br>
+						<input name="input_5.1" type="checkbox" value="First Name" >
+						<label for="choice_2_5_1" id="label_2_5_1">First Name</label><br>
+						<input name="input_5.2" type="checkbox" value="Last Name" >
+						<label for="choice_2_5_2" id="label_2_5_2">Last Name</label><br>
+						<input name="input_5.3" type="checkbox" value="Phone Number" >
+						<label for="choice_2_5_3" id="label_2_5_3">Phone Number</label><br>
+						<input name="input_5.4" type="checkbox" value="Email Address" >
+						<label for="choice_2_5_4" id="label_2_5_4">Email Address</label><br>
+						<input name="input_5.5" type="checkbox" value="Message Text Area" >
+						<label for="choice_2_5_5" id="label_2_5_5">Message Text Area</label><br>
+						<input name="input_5.6" type="checkbox" value="CAPTACHA" >
+						<label for="choice_2_5_6" id="label_2_5_6">CAPTACHA</label><br>
+						<input name="input_5.7" type="checkbox" value="Other" >
+						<label for="choice_2_5_7" id="label_2_5_7">Other</label><br><br>
+        			</div>
+        			<div class="note ac l50 m100 s100">
+        				<h5>Note:-</h5>
+        				<p>All Pages Content & Related Images of the Company/Product Send on <a href="contact@oxosolutions.com">contact@oxosolutions.com</a> </p>
+        			</div>
+        		</div>
+        		<input type="submit" id="gform_submit_button_2" class="gform_button button" value="Submit" > 
+        	</div>
+        </form>
+    </div>
+</body>
