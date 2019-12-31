@@ -4,33 +4,33 @@
 <head>
     <title>Demo</title>
     <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
-    <style >
+    <style>
         body {
             line-height: 1.4;
             font-size: 17px;
         }
-
+        
         .our_services .separator,
         .our_portfolio .separator,
         .seprator {
             width: 10%;
             margin-bottom: 25px;
         }
-
+        
         .separator {
             width: 90%;
             margin-bottom: 25px;
         }
-
-    /*menu bar style*/
+        /*menu bar style*/
         
         .aione-header {
             border-bottom: 1px solid #abc;
-            background: #ffffffde;
+            background: #ffffffd1;
         }
-        .fixed{
-        	background:  #ffffffde;
-        	        }
+        
+        .fixed {
+            background: #ffffffd1;
+        }
         
         .aione-nav.horizontal {
             border-bottom: 1px solid transparent;
@@ -55,7 +55,7 @@
         .aione-nav-item:hover {
             background-color: #3c83c1;
         }
- 
+        
         .head-logo img {
             height: 50px;
             width: auto;
@@ -67,89 +67,88 @@
             font-weight: 500;
         }
         
-    /*slider section*/
-
-        .slider_section {
-            background-image: url(https://portotheme.com/html/porto/7.5.0/img/slides/slide-corporate-1-1.jpg);
-            min-height: 450px;
-            background-position: center;
+        /*slider section*/
+        
+        .slider_section h4,
+        .slider_section h3 {
+            color: white;
+            font-weight: 800;
         }
         
-        .slider_section .wrapper {
-        	background: #3c83c19c;
-            min-height: 550px;
-            text-align: center;
-        }
-        
-        .slider-item {
-            margin-top: 16%;
-        }
-        
-        .slider-item .wrap {
-            background: #00000061;
-            width: 45%;
-            padding: 15px;
-            margin: 0 auto;
-            min-height: 100px;
-        }
-        
-        .slider-item p {
-            font-size: 22px;
+        .slider_section p {
+            color: #;
             font-weight: 500;
-            color: white;
+            color: #c9c2c2;
+            font-size: 15px;
+            margin-bottom: 25px;
+            margin-top: 30px;
         }
         
-        .slider-item h2 {
-            text-shadow: 2px 0 4px black;
+        .slider-wrapper {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+        }
+        
+        .slider-item .text-caption {
+            position: absolute;
+            color: white;
+            padding-top: 14%;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            font-weight: 300;
+            font-size: 13px;
+            text-align: center;
+            background: #27292bd9;
+        }
+        
+        .owl-carousel .owl-stage-outer {
+            height: 550px;
+        }
+        
+        .owl-carousel .owl-dots.disabled,
+        .owl-carousel .owl-nav.disabled {
+            display: inline-block;
+        }
+        
+        .slider.aione .owl-nav .owl-prev {
+            left: 50px;
+        }
+        
+        .slider.aione .owl-nav .owl-next {
+            right: 50px;
+        }
+        
+        .slider.aione .owl-nav .owl-next,
+        .slider.aione .owl-nav .owl-prev {
+            width: 45px;
+            height: 45px;
+            border-radius: 5px;
             padding: 0;
-            margin: 0;
-            color: white;
         }
         
-        .slider-title {
-            margin-bottom: 10px;
-        }
-
-    /* porto classes */
-
-        .p{
-        	animation: s 2s ;
-        	position: absolute;
-        	left: 44%;
-        	text-align: center;
-        }
-
-        
-        .o{
-        	animation: u 3s ;
-        	position: absolute;
-        	left: 46.1%;
-        	text-align: center;
-        }
-
-        .r{
-        	animation: k 4s ;
-        	position: absolute;
-        	left: 49%;
-        	text-align: center;
-        }
-
-        .t{
-        	animation: h 5s ;
-        	position: absolute;
-        	left: 51.5%;
-        	text-align: center;
-        }
-
-        .s{
-        	animation: i 6s ;
-        	position: absolute;
-        	left: 53.5%;
-        	text-align: center;
+        .slider .owl-nav .owl-next:before,
+        .slider .owl-nav .owl-prev:before {
+            width: 10px;
+            height: 10px;
+            left: 12px;
         }
         
-    /* our services section */
-
+        .slider .owl-nav .owl-prev:before {
+            left: 19px;
+        }
+        
+        .slider.aione .owl-dots {
+            display: none;
+        }
+        /* our services section */
+        
         .our_services {
             background-color: #f5f5f5;
             padding: 10px 0;
@@ -168,7 +167,6 @@
             margin-left: 31px;
             margin-top: 8px;
         }
-
         /* our portfolio */
         
         .our_portfolio .wrapper,
@@ -206,46 +204,45 @@
             font-weight: 600;
         }
         
-       .aione-button {
-       		background-color: #3c83c1;
+        .aione-button {
+            background-color: #3c83c1;
         }
         
         .our_portfolio a {
             color: white;
         }
-
+        
         .our_portfolio .wrapper:before {
-    		content: "+";
-    		position: absolute;
-   			top: 0;
-    		left: 0;
-    		right: 0;
-    		bottom: 0;
-    		height: 50px;
-    		font-size: 20px;
-    		font-weight: 700;
-    		text-align: center;
-    		color: white;
-    		z-index: 2;
-    		border-radius: 0 0 10px 0;
-    		line-height: 2.4;
-    		width: 45px;
-    		background: #3c83c1;
-    		transform: translate(-50px, -50px);
-    		transition-duration: .5s;
-		}
-		.our_portfolio .ac:hover .wrapper:before{
-			transform: translate(0); 
-			z-index: 2;
-			transition-duration: .5s;
-		}
-
-		/* Testimonial */
-
-		.section_testimonials {
+            content: "+";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 700;
+            text-align: center;
+            color: white;
+            z-index: 2;
+            border-radius: 0 0 10px 0;
+            line-height: 2.4;
+            width: 45px;
+            background: #3c83c1;
+            transform: translate(-50px, -50px);
+            transition-duration: .5s;
+        }
+        
+        .our_portfolio .ac:hover .wrapper:before {
+            transform: translate(0);
+            z-index: 2;
+            transition-duration: .5s;
+        }
+        /* Testimonial */
+        
+        .section_testimonials {
             background: #f7f7f7;
             background-color: #EDEDED !important;
-            
         }
         
         .section_testimonials .slider-wrapper {
@@ -261,12 +258,11 @@
             padding-right: 80px;
             margin-top: 0;
         }
-
+        
         .section_testimonials .slider img {
             width: 10%;
             margin: 0 auto;
             margin-bottom: 25px;
-
         }
         
         .section_testimonials .slider.aione .owl-dots .owl-dot span {
@@ -281,33 +277,33 @@
         }
         
         .section_testimonials blockquote:before {
-        	content: "“";
-        	position: absolute;
-            color: #212529 ;
+            content: "“";
+            position: absolute;
+            color: #212529;
             left: 0;
             top: 0;
-            display: block ;
+            display: block;
             font-size: 80px;
             font-style: normal;
             line-height: 1;
-            font-family: initial;  
+            font-family: initial;
         }
         
         .section_testimonials blockquote:after {
-        	content: "”";
-        	position: absolute;
-        	bottom: -0.5em;
-        	right: 0;
-        	font-size: 80px;
-            color: #212529 ;
-            display: block ;
+            content: "”";
+            position: absolute;
+            bottom: -0.5em;
+            right: 0;
+            font-size: 80px;
+            color: #212529;
+            display: block;
             font-style: normal;
             line-height: 1;
             font-family: initial;
         }
         
         .section_testimonials blockquote {
-            background: transparent ;
+            background: transparent;
             border-radius: 4px;
             padding: 22px 20px;
             position: relative;
@@ -317,10 +313,10 @@
             line-height: 1.5;
             font-size: 1.30em;
             color: #212529;
-            padding-left:50px;
+            padding-left: 50px;
             padding-right: 50px;
             font-family: sarpanch;
-           }
+        }
         
         .section_testimonials strong {
             font-weight: 900;
@@ -328,179 +324,102 @@
             margin-bottom: 2px;
             color: #111;
         }
-
-	/*   aione-footer  */
-
-		.aione-footer{
-			background-image:url(https://preview.oklerthemes.com/porto/7.6.0/img/parallax/parallax-8.jpg);
-			background-position: center;
-    		background-repeat: no-repeat;
-    		background-size: cover;
-		}
-
-		.aione-footer img{
-			height: 55px;
-		}
-
-		.aione-footer input{
-		    width: 65%;
-   			height: 30px;
-    		font-size: 15px;
-    		border-radius: 15px;
-    		outline: transparent;
-		}
-
-		.aione-footer h4{
-			color: white;
-			font-size: 22px;
-			font-weight: 500;
-			margin-bottom: 20px;
-		}
-
-
-		.aione-footer a{
-			color:#abc;
-			line-height: 2;
-			font-size: 15px;
-		}
-
-		.aione-footer a:hover{
-			color:white;
-			margin-left: 3px;
-		}
-
-		.go{
-			position: absolute;
-    		left: 75%;
-    		top: 47%;
-    		border: none;
-    		width: 44px;
-    		border-left: 1px solid #abc;
-    		height: 34px;
-    		outline: none;
-    		border-radius: 0px 15px 15px 0px;
-		}
-
-		.aione-footer .icon {
-    		font-size: 20px;
-    		color: #91c4f2;
-    		margin: 0 3px 0 27px;
-		}
-
-		.aione-footer p{
-			padding-top: 8px;
-    		font-size: 14px;
-		}
-	/*  copyright  */
-
-		.aione-copyright{
-			color: #ffffff;
-    		margin: 0;
-    		padding: 20px 0;
-    		border-top: 1px solid #e8e8e8;
-    		font-size: 14px;
-    		color: #acba;
-    		line-height: 24px;
-    		background: #000000e0;
-		}
-
-	/* key frames */
-
-		  
-
-        @keyframes s{
-        	0%{ 
-        		transform: translate(-30px , 0px);
-        		transition-duration: 2s; 
-        		opacity: 0;
-        	}
-        	100%{
-        		transform: translate(0); 
-        		transition-duration: 2s; 
-        		opacity: 1;
-        	}
+        /*   aione-footer  */
+        
+        .aione-footer {
+            background-image: url(https://preview.oklerthemes.com/porto/7.6.0/img/parallax/parallax-8.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-
-
-        @keyframes u{
-        		0%{ 
-        		transform: translate(-35px , 0px);
-        		transition-duration: 3s; 
-        		opacity: 0;
-        	}
-        	100%{
-        		transform: translate(0); 
-        		transition-duration: 3s; 
-        		opacity: 1;
-        	}
+        
+        .aione-footer img {
+            height: 55px;
         }
-
-
-
-        @keyframes k{
-        		0%{ 
-        		transform: translate(-40px , 0px);
-        		transition-duration: 4s; 
-        		opacity: 0;
-        	}
-        	100%{
-        		transform: translate(0); 
-        		transition-duration: 4s; 
-        		opacity: 1;
-        	}
+        
+        .aione-footer input {
+            width: 65%;
+            height: 30px;
+            font-size: 15px;
+            border-radius: 15px;
+            outline: transparent;
         }
-
-
-
-
-        @keyframes h{
-        		0%{ 
-        		transform: translate(-45px , 0px);
-        		transition-duration: 4s; 
-        		opacity: 0;
-        	}
-        	100%{
-        		transform: translate(0); 
-        		transition-duration: 4s; 
-        		opacity: 1;
-        	}
+        
+        .aione-footer h4 {
+            color: white;
+            font-size: 22px;
+            font-weight: 500;
+            margin-bottom: 20px;
         }
-
-
- 			
-        @keyframes i{
-        		0%{ 
-        		transform: translate(-50px , 0px);
-        		transition-duration: 5s; 
-        		opacity: 0;
-        	}
-        	100%{
-        		transform: translate(0); 
-        		transition-duration: 5s; 
-        		opacity: 1;
-        	}
+        
+        .aione-footer a {
+            color: #abc;
+            line-height: 2;
+            font-size: 15px;
         }
-.awesome {
-	animation: shadow 5s infinite;
-}
-	@keyframes shadow{
-        		0%{ 
-        			text-shadow: 2px 3px 12px black;
-        		}
-        		25%{
-        			text-shadow: 2px 3px 12px green;
-        		}
-        		50%{
-        			text-shadow: 2px 3px 12px orange;
-        		}
-        		75%{
-        			text-shadow: 2px 3px 12px blue;
-        		}
-        		100%{
-        			text-shadow: 2px 3px 12px red;
-        		}
-}
-
+        
+        .aione-footer a:hover {
+            color: white;
+            margin-left: 3px;
+        }
+        
+        .go {
+            position: absolute;
+            left: 75%;
+            top: 47%;
+            border: none;
+            width: 44px;
+            border-left: 1px solid #abc;
+            height: 34px;
+            outline: none;
+            border-radius: 0px 15px 15px 0px;
+        }
+        
+        .aione-footer .icon {
+            font-size: 20px;
+            color: #91c4f2;
+            margin: 0 3px 0 27px;
+        }
+        
+        .aione-footer p {
+            padding-top: 8px;
+            font-size: 14px;
+        }
+        /*  copyright  */
+        
+        .aione-copyright {
+            color: #ffffff;
+            margin: 0;
+            padding: 20px 0;
+            border-top: 1px solid #e8e8e8;
+            font-size: 14px;
+            color: #acba;
+            line-height: 24px;
+            background: #000000e0;
+        }
+        
+        .awesome {
+            animation: shadow 5s infinite;
+        }
+        /* key frames */
+        
+        @keyframes shadow {
+            0% {
+                text-shadow: 2px 3px 12px black;
+            }
+            25% {
+                text-shadow: 2px 3px 12px green;
+            }
+            50% {
+                text-shadow: 2px 3px 12px orange;
+            }
+            75% {
+                text-shadow: 2px 3px 12px blue;
+            }
+            100% {
+                text-shadow: 2px 3px 12px red;
+            }
+        }
     </style>
 </head>
 <!-- End of Head Section -->
@@ -509,8 +428,8 @@
     <div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
         <div class="wrapper">
 
-        <!-- Aione Header -->
-            
+            <!-- Aione Header -->
+
             <div id="aione_header" class="aione-header light sticky">
                 <div class="wrapper ar mv-5 ">
                     <div class="head-logo ac l30 m30 s100 aione-align-center">
@@ -533,49 +452,50 @@
                 </div>
             </div>
 
-        <!--  Start content Section-->
-            
+            <!--  Start content Section-->
+
             <div id="aione_main" class="aione-main fullwidth">
                 <div class="wrapper">
-                	<!--  Start aione content Section-->
+                    <!--  Start aione content Section-->
                     <div id="aione_content" class="aione-content">
                         <div class="wrapper">
-                        	<!--  Start aione page content Section-->
+                            <!--  Start aione page content Section-->
                             <div id="aione_page_content" class="aione-page-content">
                                 <div class="wrapper">
 
-        <!--  Start Slider Section-->
+                                    <!--  Start Slider Section-->
 
                                     <section class="slider_section">
                                         <div class="wrapper">
-                                            <div class="slider owl-carousel theme-oxo " data-items="1" data-loop="True" data-autoplay="True" data-slideby="1"  >
-                                                <div class="slider-item mt-5p">
-                                                    <div class="wrap">
-                                                        <div class="slider-title">
-                                                            <p>WE CREATE DESIGN</p>
-                                                        </div>
-                                                        <div class="description">
-                                                            <h2 class="aione-align-center"><span class="p">P</span><span class="o">O</span><span class="r">R</span><span class="t">T</span><span class="s">O</span></h2>
-                                                        </div>
-                                                    </div>
-                                                </div>
 
+                                            <div class="slider owl-carousel aione" data-nav-text="" data-items="1" data-margin="0" data-loop="true" data-autoplay="true">
                                                 <div class="slider-item">
-                                                    <div class="wrap">
-                                                        <div class="slider-title">
-                                                            <h2 class="awesome">AWESOME DESIGN</h2>
-                                                        </div>
-                                                        <div class="description">
-                                                            <p>porto is a huge sucess</p>
-                                                        </div>
+                                                    <img src="https://preview.oklerthemes.com/porto/7.6.0/img/slides/slide-corporate-7-2.jpg" alt="" />
+                                                    <div class="text-caption">
+
+                                                        <h4 class="fadeInDown animated " data-animate="fadeInDown">HELLO, THIS IS</h4>
+
+                                                        <h3 class="" data-animate="">PORTO HTML TEMPLATE</h3>
+                                                        <p>Porto is a huge success in the of one the world's largest Marketplace.</p>
+                                                        <a href="#" class="aione-button small rounded fadeInUp animated">Get Started Now</a>
+                                                    </div>
+
+                                                </div>
+                                                <div class="slider-item">
+                                                    <img src="https://preview.oklerthemes.com/porto/7.6.0/img/slides/slide-corporate-7-1.jpg" alt="" />
+                                                    <div class="text-caption">
+                                                        <h4 class="fadeInDown animated" data-animate="fadeInDown">HELLO, THIS IS</h4>
+                                                        <h3>PORTO HTML TEMPLATE</h3>
+                                                        <p>Porto is a huge success in the of one the world's largest Marketplace.</p>
+                                                        <a href="#" class="aione-button small rounded fadeInUp animated">Learn More</a>
+                                                        <a href="#" class="aione-button small rounded fadeInUp animated">Get Started Now</a>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </section>
 
-        <!--  Start Services Section-->
+                                    <!--  Start Services Section-->
 
                                     <section class="our_services mt-40">
                                         <h3 class="aione-align-center pt-10">Our Services</h3>
@@ -650,7 +570,7 @@
                                         </div>
                                     </section>
 
-        <!--  Start Product Section-->
+                                    <!--  Start Product Section-->
 
                                     <section class="product mt-50 ph-50">
                                         <div class="ar pv-35 ph-50">
@@ -682,7 +602,7 @@
                                         </div>
                                     </section>
 
-        <!--  Start Portfolio Section-->
+                                    <!--  Start Portfolio Section-->
 
                                     <section class="our_portfolio mv-40">
                                         <h3 class="aione-align-center pt-10">Our Portfolio</h3>
@@ -696,7 +616,7 @@
                                                     <div class="overlay">
                                                         <div class="title">Project title</div>
                                                         <div class="description">
-                                                        	<a href="#" class="aione-button small rounded "> Click here</a>
+                                                            <a href="#" class="aione-button small rounded "> Click here</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -756,14 +676,14 @@
                                         </div>
                                     </section>
 
-                            <!--  Start Testimonial Section-->
+                                    <!--  Start Testimonial Section-->
                                     <h3 class="aione-align-center ">Testimonial</h3>
                                     <hr class="seprator">
                                     <section class="section_testimonials pv-50">
                                         <div class="slider-wrapper aione-align-center">
                                             <div class="slider owl-carousel aione" data-nav-text="" data-items="1" data-margin="" data-loop="true" data-autoplay="true">
                                                 <div class="slider-item">
-                                                    	<img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
+                                                    <img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
                                                     <div class="content">
                                                         <blockquote>
                                                             <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
@@ -772,7 +692,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="slider-item">
-	                                                	<img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
+                                                    <img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
                                                     <div class="content">
                                                         <blockquote>
                                                             <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
@@ -781,12 +701,12 @@
                                                     </div>
                                                 </div>
                                                 <div class="slider-item">
-                                                    	<img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
+                                                    <img class="aione-circle aione-align-center" src="https://preview.oklerthemes.com/porto/7.6.0/img/clients/client-1.jpg" alt="" />
                                                     <div class="content">
                                                         <blockquote>
                                                             <p>Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma - which is living with the results of other people’s thinking. Don’t let the noise of others’ opinions drown out your own inner voice.</p>
                                                         </blockquote>
-                                                        <h6 class="mb-22" ><strong>- John Smith. Okler</strong></h6>
+                                                        <h6 class="mb-22"><strong>- John Smith. Okler</strong></h6>
                                                     </div>
                                                 </div>
                                             </div>
@@ -804,44 +724,43 @@
             <!-- .aione-main -->
             <div id="aione_footer" class="aione-footer pv-30 mb-0">
                 <div class="wrapper ar mv-50">
-                	<div class="ac l30 m100 s100">
-                		<div class="wrapper mv-28">
-                			<img src="https://preview.oklerthemes.com/porto/7.6.0/img/logo-dark.png" alt="logo">
-                		</div>
-                	</div>
-                	<div class="ac l15 m100 s100">
-                		<div class="wrapper aione-align-left">
-                			<h4>Pages</h4>
-                			<p><a href="#">Our Services</a> </p>
-                			<p><a href="#">About Us</a> </p>
-                			<p><a href="#">Contact Us </a> </p>
-                		</div>
-                	</div>
-                	<div class="ac l15 m100 s100">
-                		<div class="wrapper aione-align-left">
-                			<h4>Links</h4>
-                			<p><a href="#">FAQ's</a> </p>
-                			<p><a href="#">Sitemap</a> </p>
-                		</div>
-                	</div>
-                	<div class="ac l40 m100 s100">
-                		<div class="wrapper ">
-                			<h4 class=" ">Newsletter</h4>
-                			<input type="email" placeholder="E-mail">
-                			<button class="go"> Go </button>
-                			<br>
-                			<p> <span class="icon"><i class="fa fa-whatsapp"></i></span>
-                			(800) 123-4567
-                			<span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                			mail@example.com</p>
-                			</div>
-                	</div>
+                    <div class="ac l30 m100 s100">
+                        <div class="wrapper mv-28">
+                            <img src="https://preview.oklerthemes.com/porto/7.6.0/img/logo-dark.png" alt="logo">
+                        </div>
+                    </div>
+                    <div class="ac l15 m100 s100">
+                        <div class="wrapper aione-align-left">
+                            <h4>Pages</h4>
+                            <p><a href="#">Our Services</a> </p>
+                            <p><a href="#">About Us</a> </p>
+                            <p><a href="#">Contact Us </a> </p>
+                        </div>
+                    </div>
+                    <div class="ac l15 m100 s100">
+                        <div class="wrapper aione-align-left">
+                            <h4>Links</h4>
+                            <p><a href="#">FAQ's</a> </p>
+                            <p><a href="#">Sitemap</a> </p>
+                        </div>
+                    </div>
+                    <div class="ac l40 m100 s100">
+                        <div class="wrapper ">
+                            <h4 class=" ">Newsletter</h4>
+                            <input type="email" placeholder="E-mail">
+                            <button class="go"> Go </button>
+                            <br>
+                            <p> <span class="icon"><i class="fa fa-whatsapp"></i></span> (800) 123-4567
+                                <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span> mail@example.com
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- .aione-footer -->
             <div id="aione_copyright" class="aione-copyright">
                 <div class="wrapper aione-align-center">
-                	© Copyright 2019. All Rights Reserved.
+                    © Copyright 2019. All Rights Reserved.
                 </div>
             </div>
             <!-- .aione-copyright -->
@@ -854,5 +773,3 @@
 </body>
 
 </html>
-
-
