@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Aione Framework</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css" >
+
+<style>
+#div1 {
+  width: 58%;
+  min-height: 70px;
+  float: left;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+
+#div1 button ,#div1 .settings{
+    display: none;
+}
+
+section{
+    position: relative;
+    width: 36.5%;
+    float: right;
+    padding: 10px;
+        top: -15px;
+          min-height: 70px;
+    border: 1px solid #aaaaaa;
+}
+
+
+
+
+
+
+.gray-button{
+    height: 12px;
+    width: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #c7c2c2;
+}
+.orange-button{
+height: 12px;
+    width: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #f4b31391
+}
+.red-button{
+    height: 12px;
+    width: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #c31c1c91
+}
+.green-button{
+    height: 12px;
+    width: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #1cc37e91
+}
+.blue-button{
+   height: 12px;
+    width: 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    background-color: #5f9ea0
+}
+
+
+/*  top bar  */
+.top-bar {
+            position: relative;
+            background-color: #f4b31391;
+            color: #3d3d3d;
+            width: 100%;
+            z-index: 2;
+        }
+        
+        .top-bar-left {
+            padding-left: 0 0 0 20px;
+        }
+        
+        .top-bar-left h3 {
+            font-weight: 900;
+            color: #333333;
+            text-shadow: 0 0 3px #fafafa;
+        }
+        
+        .top-bar-right {
+            padding-right: 0 20px 0 0;
+        }
+
+
+/*  header    */
+        
+        .header {
+            z-index: 71;
+            position: sticky;
+            background: #0e0e0ed1;
+            width: 100%;
+            top: 0;
+        }
+        
+        .aione-nav.horizontal {
+            border-bottom: none;
+            box-shadow: none;
+        }
+        
+        span.nav-item-text {
+            margin: 0 10px;
+            text-shadow: 0 0 2px #ca9303;
+            color: #fff;
+            font-size: 17px;
+        }
+
+
+
+        /*   section about */
+        
+        .section_about {
+            margin: 50px 0;
+        }
+        
+        .section_about h3 {
+            font-weight: bold;
+        }
+        
+        .section_about h3 span {
+            font-weight: 300;
+        }
+        
+        .section_about h4 {
+            font-weight: 600;
+        }
+        
+        .section_about h4 span {
+            color: #f2b129;
+            text-shadow: 0 0 1px black;
+            font-weight: 400;
+        }
+        
+        .section_about .fa {
+            margin: 10px;
+            font-size: 26px;
+            height: 35px;
+            width: 35px;
+            background: #ffffff;
+            color: #dc9d18;
+            text-align: center;
+            border-radius: 50%;
+            border: 2px solid;
+            line-height: 1.4;
+        }
+        
+        .section_about .fa:hover {
+            color: #fff;
+            background: #e8b23f;
+        }
+        
+        .section_about .image {
+            position: relative;
+          
+        }
+
+        .section_about .image img{
+            width: 100%;
+            max-height: 300px;
+        }
+        
+        .section_about .frame {
+            position: absolute;
+            border: 6px solid #b99234a3;
+            height: 82%;
+            width: 70%;
+            top: 7%;
+            left: 14%;
+        }
+
+
+
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+<script>
+function bgGrey() {
+  document.getElementById("top-bar").style.backgroundColor = "#c7c2c2";
+}
+function bgOrange() {
+  document.getElementById("top-bar").style.backgroundColor = "#f4b31391";
+}
+  function bgRed() {
+  document.getElementById("top-bar").style.backgroundColor = "#c31c1c91";
+}
+  function bgGreen() {
+  document.getElementById("top-bar").style.backgroundColor = "#1cc37e91";
+}
+  function bgBlue() {
+  document.getElementById("top-bar").style.backgroundColor = " #5f9ea0";
+}
+</script>
+  <script>
+    function grey() {
+  document.getElementById("top-bar-2").style.backgroundColor = "#c7c2c2";
+}
+function orange() {
+  document.getElementById("top-bar-2").style.backgroundColor = "#f4b31391";
+}
+  function red() {
+  document.getElementById("top-bar-2").style.backgroundColor = "#c31c1c91";
+}
+  function green() {
+  document.getElementById("top-bar-2").style.backgroundColor = "#1cc37e91";
+}
+  function blue() {
+  document.getElementById("top-bar-2").style.backgroundColor = " #5f9ea0";
+}
+  </script>
+</head>
+<!-- End of Head Section -->
+<body>
+
+<p>Drag into the rectangle:</p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<section >
+  <h4 class="aione-align-center">select top-bar</h4>
+  <div id="drag1" draggable="true" ondragstart="drag(event)" >
+    <div class="top-bar ar" id="top-bar">
+                <div class="top-bar-left ac l50 m100 s100">
+                    <h3 contenteditable="true"  class="m-0">Demo</h3>
+                </div>
+                <div class="top-bar-right ac l50 m100 s100">
+                    <ul class="aione-social-icons small circle horizontal dark aione-align-right m-0">
+                        <li class="facebook"><a href="https://www.facebook.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Facebook</span></a></li>
+                        <li class="twitter"><a href="https://twitter.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Twitter</span></a></li>
+                        <li class="youtube"><a href="https://www.youtube.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Youtube</span></a></li>
+                        <li class="linkedin"><a href="https://www.linkedin.com/company/oxo-solutions/" target="_blank"><span class="icon"></span><span class="label">Linkedin</span></a></li>
+                        <li class="github"><a href="https://github.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Github</span></a></li>
+                    </ul>
+                </div>
+            </div>
+    <span class="settings">choose bg-color</span>
+              <button type="button" class="gray-button" onclick="bgGrey()"></button>
+      <button type="button" class="orange-button" onclick="bgOrange()" ></button>
+          <button type="button" class="red-button" onclick="bgRed()" ></button>
+          <button type="button" class="green-button" onclick="bgGreen()" ></button>
+          <button type="button" class="blue-button" onclick="bgBlue()" ></button>
+  </div>
+   
+  </div>
+  <div id="drag1-1" draggable="true" ondragstart="drag(event)" >
+    <div class="top-bar ar" id="top-bar-2">
+                <div class="top-bar-left ac l50 m50 s100">
+                  <p style="font-weight:bold; line-height:3;" contenteditable="true">Helpline: 911</p>
+                </div>
+                <div class="top-bar-right ac l50 m50 s100 aione-align-right">
+                                      <ul class="aione-social-icons small circle horizontal dark aione-align-right m-0">
+                        <li class="facebook"><a href="https://www.facebook.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Facebook</span></a></li>
+                        <li class="twitter"><a href="https://twitter.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Twitter</span></a></li>
+                        <li class="youtube"><a href="https://www.youtube.com/oxosolutions" target="_blank"><span class="icon"></span><span class="label">Youtube</span></a></li>
+
+                    </ul>
+   
+                </div>
+            </div>
+    <span class="settings">choose bg-color</span>
+              <button type="button" class="gray-button" onclick="grey()" class="gray-button"></button>
+      <button type="button" onclick="orange()" class="orange-button"></button>
+          <button type="button" onclick="red()" class="red-button"></button>
+          <button type="button" onclick="green()" class="green-button"></button>
+          <button type="button" onclick="blue()" class="blue-button"></button>
+  </div>
+   
+  </div>
+   <h4 class="aione-align-center">select header style</h4>
+  <div id="drag2" draggable="true" ondragstart="drag(event)" >
+  <div class="header ar">
+                <div class="header-left ac l20 m100 s100 ">
+                    <img src="#" alt="img">
+                </div>
+                <div class="header-right ac l80 m100 s100 ">
+                    <nav id="aione_nav" class="aione-nav slide-down horizontal aione-align-center sticky">
+                        <ul id="aione_menu" class="aione-menu">
+                            <li class="aione-nav-item level0"><a href="#"><span class="nav-item-text" contenteditable="true" data-hover="Home">Home</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#section_about"><span class="nav-item-text" contenteditable="true" data-hover="About">About</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#"><span class="nav-item-text" contenteditable="true" data-hover="Products">Products</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#section_skill"><span class="nav-item-text" contenteditable="true" data-hover="Skill's">Skill's</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#"><span class="nav-item-text" contenteditable="true" data-hover="Resources">Resources</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#"><span class="nav-item-text" contenteditable="true" data-hover="Career">Career</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#section_portfolio"><span class="nav-item-text" contenteditable="true" data-hover="Portfolio">Portfolio</span></a></li>
+                            <li class="aione-nav-item level0"><a href="#section_contact"><span class="nav-item-text" contenteditable="true" data-hover="Contact">Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+  </div>
+
+</div>
+  <div id="drag3" draggable="true" ondragstart="drag(event)" >
+<div class="section_about" id="section_about">
+                    <div class="ar ph-5">
+                        <div class="image ac l50 m100 s100 ph-5">
+                            <img src="https://i.pinimg.com/originals/3d/66/fd/3d66fdcd604a59f5bd72117e3f2bd749.jpg" alt="1">
+                            <div class="frame animate tada" style="visibility: visible; animation-name: tada;"></div>
+                        </div>
+                        <div class="ac l50 m100 s100 ph-5">
+                            <h3 class="mb-20">About <span contenteditable="true"> me</span></h3>
+                            <h4>Hello! <span contenteditable="true"> I'M Nicole Jean.</span></h4>
+                            <p contenteditable="true">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            <p contenteditable="true">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                            <p contenteditable="true">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                            <a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
+
+</body>
+</html>
